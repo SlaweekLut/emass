@@ -8,8 +8,8 @@
     <title>Emass</title>
   </head>
   <body> 
-    <div class="container">
-      <header class="header"><a class="header__logo" href="#" tabindex="-1"> <img src="assets/img/logo.png" alt="Логотип"></a>
+    <header class="header">
+      <div class="container"><a class="container__logo" href="#" tabindex="-1"> <img src="assets/img/logo.png" alt="Логотип"></a>
         <nav class="nav"> <a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Помощь</a><a class="nav__item" href="#">Lookbook</a><a class="nav__item" href="#">Новости</a><a class="nav__item" href="#">Блог</a></nav>
         <nav class="nav-buttons"> 
           <button class="nav-buttons__button"> <img src="assets/img/icon-search.png" alt="Поиск"></button><a class="nav-buttons__item" href="#"> <img src="assets/img/icon-user.png" alt="Пользователь"></a><a class="nav-buttons__item nav-buttons__item--notification nav-buttons__item--small" href="#"> <img src="assets/img/icon-weight.png" alt="Весы"></a><a class="nav-buttons__item nav-buttons__item--notification nav-buttons__item--small" href="#"> <img src="assets/img/icon-favorite.png" alt="Понравившееся"></a><a class="nav-buttons__item nav-buttons__item--notification" href="#" data-count="2"> <img src="assets/img/icon-cart.png" alt="Корзина"></a>
@@ -28,8 +28,8 @@
             </div>
           </div>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
     <main> 
       <section class="grid grid--main">
         <h2 style="font-size: 0; opacity: 0; position: absolute;">Коллекции</h2>
@@ -237,6 +237,33 @@
         <p class="about__text">Основным направлением нашей деятельности является производство и оптовая продажа верхней женской одежды. В первую очередь — это пальто, куртки, плащи, ветровки. <br/><br/>Мы реализуем крупным и мелким оптом верхнюю одежду во все регионы Украины и ближнего зарубежья, предоставляем эксклюзивные дистрибьюторские условия сотрудничества нашим постоянным клиентам. <br/><br/>Главная задача, которая стоит перед всем штатом, это высокое качество нашей продукции. Оригинальные модели с соблюдением всех тенденций современной моды, безупречная посадка, высокое качество используемых тканей и фурнитуры- это результат работы всего нашего коллектива, любящего свое дело. <br/><br/>Процесс производства каждой модели долгий и кропотливый. Прежде чем представить Вам новую модель, наши модельеры проделывают большую работу: детально изучают тенденции мира моды, учитывают потребительский спрос, актуальность тех или иных тканей и цветов. И только с учетом всех этих моментов создается эскиз новой оригинальной модели. Безупречная посадка наших моделей достигается благодаря отлаженной работы команды конструкторов. Ни одна единица не может быть запущена в производство без доведения ее до максимально идеальной посадки.</p><a class="about__more" href="#">Читать далее  <img src="assets/img/icon-dropdown.svg" alt="Смотреть больше"></a>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer container"> 
+        <div class="footer__top-part">
+          <div class="footer-column">
+            <h3 class="footer-column__title">Каталог</h3><a class="footer-column__link" href="#">Новая коллекция</a><a class="footer-column__link" href="#">Дубленки</a><a class="footer-column__link" href="#">Пальто</a><a class="footer-column__link" href="#">Парки</a><a class="footer-column__link" href="#">Плащи</a><a class="footer-column__link" href="#">Эко шубы</a><a class="footer-column__link" href="#">Легкая одежда</a><a class="footer-column__link" href="#">Распродажа</a>
+          </div>
+          <div class="footer-column"> 
+            <h3 class="footer-column__title">Помощь</h3><a class="footer-column__link" href="#">Оптовое предложение </a><a class="footer-column__link" href="#">Возврат товара</a><a class="footer-column__link" href="#">Доставка и оплата</a><a class="footer-column__link" href="#">Таблица размеров</a><a class="footer-column__link" href="#">Личный кабинет</a><a class="footer-column__link" href="#">Политика приватности </a><a class="footer-column__link" href="#">Карта сайта </a>
+          </div>
+          <div class="footer-column"> 
+            <h3 class="footer-column__title">О компании</h3><a class="footer-column__link" href="#">О нас</a><a class="footer-column__link" href="#">Контакты</a><a class="footer-column__link" href="#">Отзывы</a><a class="footer-column__link" href="#">Lookbook</a><a class="footer-column__link" href="#">Блог</a><a class="footer-column__link" href="#">Новости</a><a class="footer-column__link" href="#">Подарочный сертификат</a>
+          </div>
+          <div class="footer-column"> 
+            <div class="footer-column__socials"> <a class="footer-column__social" href="#"><img src="assets/img/icon-facebook.svg" alt="facebook"></a><a class="footer-column__social" href="#"><img src="assets/img/icon-instagram.png" alt="instagram"></a><a class="footer-column__social" href="#"><img src="assets/img/icon-youtube.svg" alt="youtube"></a></div>
+            <div class="footer-column__languages"> <a class="footer-column__lang active" href="#">Рус</a><a class="footer-column__lang" href="#">Укр</a></div>
+            <div class="footer-column__number">0-800-33-00-21 <br/> (бесплатно)</div>
+            <div class="footer-column__number">+38 (050) 770-00-21 </div>
+            <div class="footer-column__number">+38 (067) 701-00-21</div>
+            <form class="subscribe" action="" method="get"> 
+              <input class="subscribe__input" type="email" placeholder="Укажите E-mail">
+              <button class="subscribe__button">Подписаться</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom-part"> <img src="assets/img/icon-company-1.png" alt="La Boutique"><img src="assets/img/icon-company-2.png" alt="Lamoda"><img src="assets/img/icon-company-3.png" alt="Rozetka"></div>
+      </div>
+    </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="assets/scripts/script.min.js"> </script>
     <script src="assets/scripts/script.ts.min.js"> </script>

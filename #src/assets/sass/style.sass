@@ -30,31 +30,48 @@
 /** Header **/
 
 .header
-	display: grid
-	grid-template-columns: 1fr 1fr 1fr
-	padding: 10px 0px
+	display: flex
+	max-width: 1800px
+	padding: 10px 72px
+	.container
+		padding: 0
+		display: flex
+		width: 100%
+	&__logo
+		display: flex
+		align-items: center
+		img
+			display: block
 
 .nav
+	margin-left: auto
 	display: flex
 	align-items: center
-	justify-content: center
-	gap: 50px
-	font-family: 'Open Sans '
+	margin: 0 auto
+	font-family: 'Open Sans'
 	font-weight: 300
+	flex-wrap: wrap
+	justify-content: center
+	width: 500px
 
 	&__item
+		display: block
+		margin-right: min(50px, 10%)
 		color: $Color-Black
 		text-decoration: none
 		&:focus
 			border-bottom: 1px solid #cc9999 !important
+		&:last-child
+			margin-right: 0
 
 .nav-buttons
 	display: flex
 	align-items: center
-	justify-content: flex-end
-	gap: 24px
+	gap: 0 24px
+	flex-wrap: wrap
 
 	&__button
+		width: 24px
 		background: transparent
 		border: 0
 		cursor: pointer
@@ -62,6 +79,7 @@
 			border-bottom: 1px solid #cc9999 !important
 
 	&__item
+		width: 24px
 		&--notification
 			position: relative
 			&::after
@@ -97,7 +115,7 @@
 		align-items: center
 		gap: 5px
 		font-size: 14px
-		font-family: 'Open Sans '
+		font-family: 'Open Sans'
 		font-weight: 300
 
 	&__list
@@ -111,7 +129,7 @@
 		border: 0
 		background: transparent
 		font-size: 14px
-		font-family: 'Open Sans '
+		font-family: 'Open Sans'
 		font-weight: 300
 
 /** Main **/
@@ -175,13 +193,13 @@
 	&__price
 		margin-top: 16px
 		font-size: 18px
-		font-family: 'Open Sans '
+		font-family: 'Open Sans'
 		font-weight: 600
 
 	&__description
 		margin: 16px 0
 		font-size: 18px
-		font-family: 'Open Sans '
+		font-family: 'Open Sans'
 		font-weight: 300
 		color: $Color-Gray
 
@@ -193,7 +211,7 @@
 		justify-content: center
 		color: $Color-White
 		font-size: 18px
-		font-family: 'Open Sans '
+		font-family: 'Open Sans'
 		font-weight: 300
 		background-color: $Color-Black
 		transition: .2s
@@ -368,7 +386,7 @@
 	position: absolute
 	top: 50%
 	left: 50%
-	font-family: 'Open Sans '
+	font-family: 'Open Sans'
 	text-decoration: none
 	color: $Color-Black
 	font-weight: 600
@@ -643,12 +661,14 @@
 		font-family: 'Open Sans'
 		font-weight: 600
 		font-size: 24px
+		@include mixin.fluid-type($Container-S, 1920px, 8px, 24px)
 
 	&__text
 		font-size: 16px
 		font-family: 'Open Sans'
 		font-weight: 300
 		position: relative
+		@include mixin.fluid-type($Container-S, 1920px, 8px, 16px)
 		&::after
 			content: ''
 			width: 100%
@@ -672,3 +692,112 @@
 			width: 8px
 			margin-left: 10px
 			transform: rotate(-90deg)
+
+/** Footer **/
+
+.footer
+	margin-top: 80px
+	background-color: $Color-Black
+	color: $Color-White
+	font-family: 'Open Sans'
+	font-weight: 300
+	&.container
+		max-width: 1800px
+		padding: 32px 74px 16px
+
+	&__top-part
+		display: flex
+		justify-content: space-between
+
+	&__bottom-part
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 130px
+		gap: 32px
+		width: 100%
+		position: relative
+		&::before
+			content: 'Наши партнеры'
+			display: block
+			position: absolute
+			font-family: 'Open Sans'
+			font-weight: 300
+			color: $Color-Gray
+			top: -30px
+
+.footer-column
+	display: flex
+	flex-direction: column
+	gap: 16px
+	&__title
+		font: 20px
+		font-weight: 300
+		margin-bottom: 8px
+
+	&__link
+		font-size: 14px
+		color: $Color-White
+		text-decoration: none
+
+	&__socials
+		display: flex
+		gap: 24px
+
+	&__lang
+		padding: 0 16px
+		border-right: 1px solid $Color-White
+		text-decoration: none
+		color: $Color-White
+		font-size: 14px
+		text-transform: uppercase
+		&:last-child
+			border-right: 0
+
+		&.active
+			color: $Color-Pink
+
+	&:last-child
+		align-items: center
+		justify-content: center
+
+	&__number
+		position: relative
+		text-align: center
+		&:nth-child(3)
+			line-height: 200%
+			&::after
+				content: 'горячая линия'
+				line-height: 100%
+				font-size: 12px
+				color: $Color-Gray
+				position: absolute
+				top: 26px
+				left: 0
+				width: 100%
+				text-align: center
+
+.subscribe
+	&__input
+		font-family: 'Raleway'
+		font-weight: 100
+		font-size: 14px
+		background: transparent
+		outline: none
+		border: 0
+		width: calc(60% - 40px)
+		margin-right: 32px
+		color: $Color-White
+		height: 40px
+		border-bottom: 1px solid $Color-White
+		&::placeholder
+			color: $Color-White
+	&__button
+		width: 40%
+		height: 40px
+		border: 1px solid $Color-White
+		color: $Color-White
+		font-family: 'Raleway'
+		font-weight: 100
+		font-size: 14px
+		background: transparent
