@@ -1,0 +1,344 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		link(rel="stylesheet", href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+		link(rel="stylesheet", href="assets/css/style.min.css")
+		title Emass
+	body 
+		.container
+			header.header
+				a._logo(href="#" tabindex='-1') 
+					img(src="assets/img/logo.png", alt="Логотип")
+				nav.nav 
+					a._item(href="#") Каталог
+					a._item(href="#") Помощь
+					a._item(href="#") Lookbook
+					a._item(href="#") Новости
+					a._item(href="#") Блог
+				nav.nav-buttons 
+					button._button 
+						img(src="assets/img/icon-search.png", alt="Поиск")
+					a._item(href="#") 
+						img(src="assets/img/icon-user.png", alt="Пользователь")
+					a._item.-notification.-small(href="#") 
+						img(src="assets/img/icon-weight.png", alt="Весы")
+					a._item.-notification.-small(href="#") 
+						img(src="assets/img/icon-favorite.png", alt="Понравившееся")
+					a._item.-notification(href="#"  data-count='2') 
+						img(src="assets/img/icon-cart.png", alt="Корзина")
+					.lang.js-dropdown
+						p._header.js-dropdown-header(tabindex='0')
+							span._value.js-dropdown-value Рус
+							img(src="assets/img/icon-dropdown.svg", alt="Выпадающий список")
+						._list.js-dropdown-list(tabindex='-1')
+							button._button Рус
+							button._button Eng
+					.number.js-dropdown
+						p._header.js-dropdown-header(tabindex='0')
+							span._value.js-dropdown-value +38 (050) 770-00-21 
+							img(src="assets/img/icon-dropdown.svg", alt="Выпадающий список")
+						._list.js-dropdown-list(tabindex='-1')
+							p._number +38 (050) 770-00-21 
+							p._number +38 (050) 770-00-21 
+
+		main 
+			section.grid.-main
+				h2(style='font-size: 0; opacity: 0; position: absolute;') Коллекции
+
+				.collection 
+					a._link(href="#") 
+					img._img(src="assets/img/img-main-1.png", alt="Коллекция")
+					._text-wrapper 
+						p._text ЛЕТНЯЯ #[br] #[span]КОЛЛЕКЦИЯ
+
+				.main-swiper.swiper 
+					._wrapper.swiper-wrapper 
+						.main-swiper-slide.swiper-slide 
+							img._img(src="assets/img/img-main-2.png", alt="Товар")
+							p._price 810 грн
+							p._description Льняное платье «Миранда» синее в полоску 
+							a._buy(href="#", tabindex='-1') Купить
+
+						.main-swiper-slide.swiper-slide 
+							img._img(src="assets/img/img-main-2.png", alt="Товар")
+							p._price 820 грн
+							p._description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							a._buy(href="#", tabindex='-1') Купить
+						
+						.main-swiper-slide.swiper-slide 
+							img._img(src="assets/img/img-main-2.png", alt="Товар")
+							p._price 486 грн
+							p._description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							a._buy(href="#", tabindex='-1') Купить
+
+					.swiper-button-prev(tabindex='0')
+					.swiper-button-next(tabindex='0')
+
+			section.grid.-category
+				h2(style='font-size: 0; opacity: 0; position: absolute;') Коллекции
+
+				.category 
+					._text-wrapper 
+						p._title Пальто
+						p._text оверсайз, длинные, двубортные 
+						a._link(href='#') смотреть все
+					img._img(src="assets/img/img-second-1.png", alt="Категория")
+
+				.category 
+					._text-wrapper 
+						p._title Дубленки
+						p._text оверсайз, длинные, двубортные 
+						a._link(href='#') смотреть все
+					img._img(src="assets/img/img-second-2.png", alt="Категория")
+
+				.category
+					._text-wrapper 
+						p._title Шубы
+						p._text оверсайз, длинные, двубортные 
+						a._link(href='#') смотреть все
+					img._img(src="assets/img/img-second-3.png", alt="Категория")
+
+				.category
+					._text-wrapper.-special 
+						p._title.-special special price
+						p._text.-special -30 %
+						a._link(href='#').-fill
+					img._img(src="assets/img/img-second-4.png", alt="Категория")
+
+			section.grid.-season
+				h2(style='font-size: 0; opacity: 0; position: absolute;') Сезоны
+
+				.season
+					h3._title Весна
+					p._text 2020
+					img(src="assets/img/img-seasons-1.png", alt="Сезоны")._img
+				
+				.season
+					h3._title Зима
+					p._text 2019
+					img(src="assets/img/img-seasons-2.png", alt="Сезоны")._img
+
+				a(href="#").season-link 
+					span LookBook
+
+			section.container.-catalog 
+				h2(style='font-size: 0; opacity: 0; position: absolute;') Каталог
+
+				.catalog-filter 
+					button._item.active Новинки
+					button._item Топ продаж
+					button._item Распродажа
+
+				.catalog-swiper-wrapper
+					.catalog-swiper.swiper
+						._wrapper.swiper-wrapper 
+							.main-swiper-slide.swiper-slide 
+								._img-wrapper
+									img._img(src="assets/img/img-main-2.png", alt="Товар")
+									button._video 
+										img(src="assets/img/icon-video.png", alt="Видео")
+								p._price 810 грн
+								p._description Льняное платье «Миранда» синее в полоску 
+								a._buy(href="#", tabindex='-1').-fill
+
+							.main-swiper-slide.swiper-slide 
+								._img-wrapper
+									img._img(src="assets/img/img-main-2.png", alt="Товар")
+									button._video 
+										img(src="assets/img/icon-video.png", alt="Видео")
+								p._price 820 грн
+								p._description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								a._buy(href="#", tabindex='-1').-fill
+							
+							.main-swiper-slide.swiper-slide 
+								._img-wrapper
+									img._img(src="assets/img/img-main-2.png", alt="Товар")
+									button._video 
+										img(src="assets/img/icon-video.png", alt="Видео")
+								p._price 486 грн
+								p._description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								a._buy(href="#", tabindex='-1').-fill
+
+							.main-swiper-slide.swiper-slide 
+								._img-wrapper
+									img._img(src="assets/img/img-main-2.png", alt="Товар")
+									button._video 
+										img(src="assets/img/icon-video.png", alt="Видео")
+								p._price 486 грн
+								p._description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								a._buy(href="#", tabindex='-1').-fill
+
+							.main-swiper-slide.swiper-slide 
+								._img-wrapper
+									img._img(src="assets/img/img-main-2.png", alt="Товар")
+									button._video 
+										img(src="assets/img/icon-video.png", alt="Видео")
+								p._price 486 грн
+								p._description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								a._buy(href="#", tabindex='-1').-fill
+
+							.main-swiper-slide.swiper-slide 
+								._img-wrapper
+									img._img(src="assets/img/img-main-2.png", alt="Товар")
+									button._video 
+										img(src="assets/img/icon-video.png", alt="Видео")
+								p._price 486 грн
+								p._description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								a._buy(href="#", tabindex='-1').-fill
+
+					.swiper-button-prev(tabindex='0')
+					.swiper-button-next(tabindex='0')
+
+			section.video 
+				h2._title Видео
+				p._subtitle Подписывайтесь на наш  
+					a(href='#') Youtube канал
+				._wrapper
+					label._buttons 
+						input(type="checkbox")
+						img(src="assets/img/icon-play.svg", alt="Воспроизвести")
+						img(src="assets/img/icon-pause.svg", alt="Поставить на паузу")
+					h3._title.-video Показ Emass на Moscow Fashion Week
+					img._img(src="assets/img/img-video-1.png", alt="Видео")
+
+			section.instagram 
+				h2._title #emassshop
+				p._subtitle Подписывайся на наш   
+					a(href='#') Instagram
+				._wrapper
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-1.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-2.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-3.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-2.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-3.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-2.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-3.png", alt="Фотография")
+					
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-2.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-3.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-2.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-3.png", alt="Фотография")
+
+					._item 
+						._text 
+							img(src="assets/img/icon-heart.png", alt="Лайки")
+							span 200
+							img(src="assets/img/icon-comment.png", alt="Коментарии")
+							span 200
+						img._img(src="assets/img/img-instagram-1.png", alt="Фотография")
+
+			section.container.-review 
+				h2._title Отзывы
+
+				.review-swiper-wrapper
+					.review-swiper.swiper
+						._wrapper.swiper-wrapper 
+							.review-swiper-slide.swiper-slide 
+								img(src="assets/img/img-review-1.png", alt="Отзыв")._img
+								._text
+									._title Женская рубашка с карманами «Мариса» разноцветная
+									._price <strong>740</strong> грн
+									._description Девочки! Спасибо за рубашку. Наконецто нашла чт о искала. Красивая современная рубашка в полосску реально сделана из льона, легкая такая как раз на лето
+									._author Лена Пагутяк
+									a(href="#")._more Смотреть 
+										img(src="assets/img/icon-arrow-1.svg", alt="Смотреть больше")
+
+							.review-swiper-slide.swiper-slide 
+								img(src="assets/img/img-review-1.png", alt="Отзыв")._img
+								._text
+									._title Женская рубашка с карманами «Мариса» разноцветная
+									._price <strong>740</strong> грн
+									._description Девочки! Спасибо за рубашку. Наконецто нашла чт о искала. Красивая современная рубашка в полосску реально сделана из льона, легкая такая как раз на лето
+									._author Лена Пагутяк
+									a(href="#")._more Смотреть 
+										img(src="assets/img/icon-arrow-1.svg", alt="Смотреть больше")
+
+					.swiper-button-prev(tabindex='0')
+					.swiper-button-next(tabindex='0')
+
+			section.about 
+				h2._title Компания "Emass" — производитель стильной и качественной женской одежды
+				p._text Основным направлением нашей деятельности является производство и оптовая продажа верхней женской одежды. В первую очередь — это пальто, куртки, плащи, ветровки. <br/><br/>Мы реализуем крупным и мелким оптом верхнюю одежду во все регионы Украины и ближнего зарубежья, предоставляем эксклюзивные дистрибьюторские условия сотрудничества нашим постоянным клиентам. <br/><br/>Главная задача, которая стоит перед всем штатом, это высокое качество нашей продукции. Оригинальные модели с соблюдением всех тенденций современной моды, безупречная посадка, высокое качество используемых тканей и фурнитуры- это результат работы всего нашего коллектива, любящего свое дело. <br/><br/>Процесс производства каждой модели долгий и кропотливый. Прежде чем представить Вам новую модель, наши модельеры проделывают большую работу: детально изучают тенденции мира моды, учитывают потребительский спрос, актуальность тех или иных тканей и цветов. И только с учетом всех этих моментов создается эскиз новой оригинальной модели. Безупречная посадка наших моделей достигается благодаря отлаженной работы команды конструкторов. Ни одна единица не может быть запущена в производство без доведения ее до максимально идеальной посадки.
+				a(href="#")._more Читать далее  
+					img(src="assets/img/icon-dropdown.svg", alt="Смотреть больше")
+
+		script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+		script(src="assets/scripts/script.min.js") 
+		script(src="assets/scripts/script.ts.min.js") 

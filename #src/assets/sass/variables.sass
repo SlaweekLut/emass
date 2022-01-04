@@ -1,0 +1,55 @@
+@use 'mixin'
+
+/** Clear **/
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	outline: none
+
+/** Fonts **/
+
+@font-face
+	font-family: 'adineue PRO Cyr'
+	src: url('../fonts/adineueprocyr_lightweb.ttf')
+
+@font-face
+	font-family: 'GothamPro'
+	src: url('../fonts/gothamPro.ttf')
+
+@font-face
+	font-family: 'Broadway'
+	src: url('../fonts/BROADW.TTF')
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:100)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600)
+
+/** Colors **/
+
+$Color-White: #FFFFFF
+$Color-Light-Gray: #e6e6e6
+$Color-Light-Pink: #f6e6e6
+$Color-Pink: #cc9999
+$Color-Pink: #cc9999
+$Color-Red: #cc3333
+$Color-Pink-Gray: #aaa2b5
+$Color-Gray: #999999
+$Color-Dark-Gray: #666666
+$Color-Black: #000000
+
+/** Container **/
+
+$Container-L: 1196px
+$Container-LM: 1024px
+$Container-M: 880px
+$Container-S: 568px
+
+.container
+	padding: 0 16px
+	@include mixin.adaptiveWidth($Container-M)
+		max-width: calc($Container-M + 32px)
+		padding: 0px 16px
+
+	@include mixin.adaptiveWidth($Container-S)
+		max-width: calc($Container-S + 32px)

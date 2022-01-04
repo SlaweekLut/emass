@@ -1,0 +1,39 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Vyacheslav Lutsenko",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.27.7",
+		"del": "^6.0.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-file-include": "^2.3.0",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-pug": "^5.0.0",
+		"gulp-pugbem": "^2.2.4",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^5.0.0",
+		"gulp-typescript": "^6.0.0-alpha.1",
+		"gulp-uglify-es": "^3.0.0",
+		"imagemin-gifsicle": "^7.0.0",
+		"imagemin-mozjpeg": "^9.0.0",
+		"imagemin-optipng": "^8.0.0",
+		"imagemin-svgo": "^10.0.0",
+		"sass": "^1.37.5",
+		"typescript": "^4.5.2"
+	},
+	"name": "HelloPrint",
+	"version": "1.0.0",
+	"main": "gulpfile.js",
+	"keywords": [],
+	"description": "",
+	"dependencies": {
+		"jsdom": "^19.0.0"
+	}
+}
