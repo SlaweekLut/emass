@@ -35,6 +35,7 @@ const swipers = () => {
 		loop: true,
 		spaceBetween: 40,
 		pagination: {
+			clickable: true,
 			el: '.swiper-pagination',
 			type: 'bullets',
 		},
