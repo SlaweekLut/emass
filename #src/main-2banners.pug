@@ -44,27 +44,38 @@ html(lang="en")
 							p._number +38 (050) 770-00-21 
 
 		main 
-			section
+			section.grid.-main
 				h2(style='font-size: 0; opacity: 0; position: absolute;') Коллекции
 
-			.collection-one.swiper 
-				._wrapper.swiper-wrapper 
-					.collection-one-sldie.swiper-slide 
-						img(src="assets/img/img-main-3.png", alt="Коллекция")._img
-						a(href="#", tabindex='-1')._link Смотреть
-					.collection-one-sldie.swiper-slide 
-						img(src="assets/img/img-main-3.png", alt="Коллекция")._img
-						a(href="#", tabindex='-1')._link Смотреть
-					.collection-one-sldie.swiper-slide 
-						img(src="assets/img/img-main-3.png", alt="Коллекция")._img
-						a(href="#", tabindex='-1')._link Смотреть
-					.collection-one-sldie.swiper-slide 
-						img(src="assets/img/img-main-3.png", alt="Коллекция")._img
-						a(href="#", tabindex='-1')._link Смотреть
-					.collection-one-sldie.swiper-slide 
-						img(src="assets/img/img-main-3.png", alt="Коллекция")._img
-						a(href="#", tabindex='-1')._link Смотреть
-				._pagination.swiper-pagination
+				.collection 
+					a._link(href="#") 
+					img._img(src="assets/img/img-main-1.png", alt="Коллекция")
+					._text-wrapper 
+						p._text ЛЕТНЯЯ #[br] #[span]КОЛЛЕКЦИЯ
+
+				.main-swiper.swiper 
+					._wrapper.swiper-wrapper 
+						.main-swiper-slide.swiper-slide 
+							img._img(src="assets/img/img-main-2.png", alt="Товар")
+							p._price 810 грн
+							p._description Льняное платье «Миранда» синее в полоску 
+							a._buy(href="#", tabindex='-1') Купить
+
+						.main-swiper-slide.swiper-slide 
+							img._img(src="assets/img/img-main-2.png", alt="Товар")
+							p._price 820 грн
+							p._description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							a._buy(href="#", tabindex='-1') Купить
+						
+						.main-swiper-slide.swiper-slide 
+							img._img(src="assets/img/img-main-2.png", alt="Товар")
+							p._price 486 грн
+							p._description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							a._buy(href="#", tabindex='-1') Купить
+
+					.swiper-button-prev(tabindex='0')
+					.swiper-button-next(tabindex='0')
+
 			section.grid.-category
 				h2(style='font-size: 0; opacity: 0; position: absolute;') Коллекции
 

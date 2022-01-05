@@ -29,6 +29,16 @@ const swipers = () => {
 			prevEl: '.swiper-button-prev',
 		}
 	});
+
+	const mainOneSwiper = new Swiper('.collection-one', {
+		slidesPerView: 1,
+		loop: true,
+		spaceBetween: 40,
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
+	});
 };
 
 

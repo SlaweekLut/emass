@@ -239,6 +239,9 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .number__button,
@@ -253,6 +256,7 @@
   font-size: 14px;
   font-family: "Open Sans";
   font-weight: 300;
+  white-space: nowrap;
 }
 
 /** Main **/
@@ -315,6 +319,62 @@
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.collection-one-sldie {
+  width: 100%;
+  max-height: 950px;
+  position: relative;
+}
+
+.collection-one-sldie__img {
+  max-height: 950px;
+  width: 100%;
+}
+
+.collection-one-sldie__link {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "adineue PRO Cyr";
+  text-decoration: none;
+  color: #cc3333;
+  text-transform: uppercase;
+  width: clamp(150px, 20%, 300px);
+  height: clamp(40px, 10%, 70px);
+  border: 5px solid #cc3333;
+  bottom: 20%;
+  left: 26%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.collection-one-sldie__link {
+  font-size: 14px;
+}
+
+.collection-one-sldie__link:hover {
+  background-color: #cc3333;
+  color: #FFFFFF;
+}
+
+.collection-one__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #f6e6e6;
+  opacity: 1;
+}
+
+.collection-one__pagination .swiper-pagination-bullet-active {
+  background-color: #cc9999;
 }
 
 .main-swiper {
@@ -1053,7 +1113,6 @@
 /** Footer **/
 
 .footer {
-  margin-top: 80px;
   background-color: #000000;
   color: #FFFFFF;
   font-family: "Open Sans";
@@ -1072,6 +1131,9 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .footer__bottom-part {
@@ -1161,11 +1223,11 @@
   text-align: center;
 }
 
-.footer-column__number:nth-child(3) {
+.footer-column__number:nth-child(2) {
   line-height: 200%;
 }
 
-.footer-column__number:nth-child(3)::after {
+.footer-column__number:nth-child(2)::after {
   content: "горячая линия";
   line-height: 100%;
   font-size: 12px;
@@ -1177,6 +1239,32 @@
   text-align: center;
 }
 
+.subscribe {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #cc9999;
+  height: 150px;
+}
+
+.subscribe__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .subscribe__input {
   font-family: "Raleway";
   font-weight: 100;
@@ -1184,42 +1272,65 @@
   background: transparent;
   outline: none;
   border: 0;
-  width: calc(60% - 40px);
-  margin-right: 32px;
-  color: #FFFFFF;
+  width: 250px;
   height: 40px;
-  border-bottom: 1px solid #FFFFFF;
+  margin-right: 32px;
+  color: #000000;
+  height: 40px;
+  border-bottom: 1px solid #000000;
 }
 
 .subscribe__input::-webkit-input-placeholder {
-  color: #FFFFFF;
+  color: #e6e6e6;
 }
 
 .subscribe__input::-moz-placeholder {
-  color: #FFFFFF;
+  color: #e6e6e6;
 }
 
 .subscribe__input:-ms-input-placeholder {
-  color: #FFFFFF;
+  color: #e6e6e6;
 }
 
 .subscribe__input::-ms-input-placeholder {
-  color: #FFFFFF;
+  color: #e6e6e6;
 }
 
 .subscribe__input::placeholder {
-  color: #FFFFFF;
+  color: #e6e6e6;
 }
 
 .subscribe__button {
-  width: 40%;
+  width: 135px;
   height: 40px;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  border: 1px solid #000000;
+  color: #000000;
   font-family: "Raleway";
   font-weight: 100;
   font-size: 14px;
   background: transparent;
+  border-radius: 20px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.subscribe__button:hover {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.subscribe__text {
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  .collection-one-sldie__link {
+    font-size: calc(14px + 18 * ((100vw - 320px) / 1600));
+  }
 }
 
 @media screen and (min-width: 568px) {
@@ -1243,6 +1354,10 @@
 }
 
 @media screen and (min-width: 1920px) {
+  .collection-one-sldie__link {
+    font-size: 32px;
+  }
+
   .about__title {
     font-size: 24px;
   }
