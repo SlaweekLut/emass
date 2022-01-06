@@ -27,6 +27,9 @@
 	&--season
 		grid-template-columns: 1fr 1fr
 		position: relative
+
+	&--three
+		margin-top: 40px
 /** Header **/
 
 .header
@@ -177,6 +180,25 @@
 		height: 100%
 		object-fit: cover
 
+	&--three
+		display: grid
+		grid-template-columns: 2fr 1fr
+		grid-template-rows: auto auto
+		grid-template-areas: 'big small1' 'big small2'
+		gap: 40px
+		margin-top: 40px
+
+	&__three-item
+		position: relative
+		&:nth-child(1)
+			grid-area: big
+		&:nth-child(2)
+			margin-right: 16px
+			grid-area: small1
+		&:nth-child(3)
+			margin-right: 16px
+			grid-area: small2
+
 .collection-one-sldie
 	width: 100%
 	max-height: 950px
@@ -204,6 +226,7 @@
 		&:hover
 			background-color: $Color-Red
 			color: $Color-White
+
 .collection-one
 	&__pagination
 		.swiper-pagination-bullet
