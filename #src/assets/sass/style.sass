@@ -30,10 +30,15 @@
 
 	&--three
 		margin-top: 40px
+body
+	position: relative
 /** Header **/
 
 .header
+	position: relative
+	z-index: 8
 	display: flex
+	background-color: $Color-White
 	max-width: 1800px
 	padding: 10px 72px
 	.container
@@ -58,6 +63,12 @@
 	width: 500px
 
 	&__item
+		border: 0
+		font-family: 'Open Sans'
+		font-weight: 300
+		font-size: 16px
+		outline: none
+		background: transparent
 		display: block
 		margin-right: min(50px, 10%)
 		color: $Color-Black
@@ -146,7 +157,7 @@
 	top: -5px
 	left: -20px
 	background-color: $Color-White
-	z-index: 3
+	z-index: 10
 	padding: 20px
 	border-radius: 10px
 	position: absolute
@@ -224,6 +235,81 @@
 		font-size: 14px
 		font-family: 'Open Sans'
 		font-weight: 400
+
+.black
+	border: 0
+	outline: none
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	position: fixed
+	z-index: 6
+	width: 100%
+	height: 100vh
+	background-color: rgba($Color-Black, 0.6)
+	display: none
+	&.active
+		display: block
+
+.catalog-popup
+	position: absolute
+	left: 0
+	top: 74px
+	width: 100%
+	gap: 20px
+	background-color: $Color-White
+	padding: 25px min(3%, 100px) 30px min(6%, 200px)
+	border-top: 1px solid $Color-Gray
+	display: none
+	justify-content: space-between
+	z-index: 7
+
+	&__column
+		display: flex
+		flex-direction: column
+		gap: 16px
+
+	&__text
+		display: flex
+		align-items: center
+		font-family: 'Open Sans'
+		font-weight: 300
+		text-decoration: none
+		font-size: 16px
+		color: $Color-Black
+		span
+			width: 50px
+			text-transform: uppercase
+			font-family: 'Raleway'
+			font-size: 16px
+		img
+			width: 50px
+			height: 24px
+			object-fit: contain
+			object-position: left
+
+		&:nth-child(1) > span
+			color: #91e393
+		&:nth-child(2) > span
+			color: #e50c07
+		&:nth-child(3) > span
+			color: #8e8adc
+
+		&:hover
+			text-decoration: underline
+			text-underline-position: under
+			text-decoration-color: $Color-Pink
+			& > span
+				text-decoration-color: $Color-White !important
+
+	&__img
+		width: min(100% ,560px)
+		img
+			width: 100%
+
+	&.active
+		display: flex
 
 /** Main **/
 

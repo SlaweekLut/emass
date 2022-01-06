@@ -7,12 +7,40 @@ html(lang="en")
 		link(rel="stylesheet", href="assets/css/style.min.css")
 		title Emass
 	body 
+		button.black#CloseCatalog
+		.catalog-popup
+			._column
+				a(href="#")._text <span>NEW</span> Новая коллекция
+				a(href="#")._text <span>SALE</span> Распродажа
+				a(href="#")._text <span>TOP</span> Топ продаж
+				a(href="#")._text <img src="assets/img/icon-mask.png" alt="Маски"> Дизайнерские маски
+			
+			._column
+				a(href="#")._text Дубленки
+				a(href="#")._text Пальто
+				a(href="#")._text Парки
+				a(href="#")._text Плащи
+				a(href="#")._text Эко шубы
+
+			._column
+				a(href="#")._text Блузки
+				a(href="#")._text Брюки
+				a(href="#")._text Костюмы
+				a(href="#")._text Платья
+				a(href="#")._text Рубашки
+				a(href="#")._text Брюки
+				a(href="#")._text Пиджаки
+
+			._column
+				a(href="#")._img
+					img(src="assets/img/img-catalog-1.png", alt="Каталог")
+		
 		header.header
 			.container
 				a._logo(href="#" tabindex='-1') 
 					img(src="assets/img/logo.png", alt="Логотип")
 				nav.nav 
-					a._item(href="#") Каталог
+					button._item(href="#")#OpenCatalog Каталог
 					a._item(href="#") Помощь
 					a._item(href="#") Lookbook
 					a._item(href="#") Новости
@@ -22,7 +50,7 @@ html(lang="en")
 						img(src="assets/img/icon-search.png", alt="Поиск")
 					.search-popup 
 						._header
-							button.nav-buttons__button
+							.nav-buttons__button
 								img(src="assets/img/icon-search.png", alt="Поиск")
 							input(type="text", placeholder='Поиск...')._input
 							button._close#closeSearch

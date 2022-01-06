@@ -130,16 +130,36 @@ choice();
 var popupFN = function () {
     var Popup = /** @class */ (function () {
         function Popup(popup, properties) {
+            var _this = this;
+            this.openClose = false;
+            this.background = false;
+            this.backgroundElement = document.querySelector('.black');
             this.classOpen = properties.classOpen;
             this.classClose = properties.classClose;
-            if (this.classOpen) {
+            this.background = properties.background;
+            this.openClose = properties.openClose;
+            if (this.openClose) {
+                this.classOpen.addEventListener('click', function () {
+                    popup.classList.toggle('active');
+                    if (_this.background) {
+                        _this.backgroundElement.classList.toggle('active');
+                    }
+                });
+            }
+            else {
                 this.classOpen.addEventListener('click', function () {
                     popup.classList.add('active');
+                    if (_this.background) {
+                        _this.backgroundElement.classList.add('active');
+                    }
                 });
             }
             if (this.classClose) {
                 this.classClose.addEventListener('click', function () {
                     popup.classList.remove('active');
+                    if (_this.background) {
+                        _this.backgroundElement.classList.remove('active');
+                    }
                 });
             }
         }
@@ -151,6 +171,15 @@ var popupFN = function () {
     var search = new Popup(searchPopup, {
         classClose: searchPopupClose,
         classOpen: searchPopupOpen
+    });
+    var catalogPopup = document.querySelector('.catalog-popup');
+    var catalogPopupClose = document.querySelector('#CloseCatalog');
+    var catalogPopupOpen = document.querySelector('#OpenCatalog');
+    var catalog = new Popup(catalogPopup, {
+        classClose: catalogPopupClose,
+        classOpen: catalogPopupOpen,
+        openClose: true,
+        background: true
     });
 };
 popupFN();

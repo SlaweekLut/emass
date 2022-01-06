@@ -150,26 +150,45 @@ const popupFN = () => {
 	interface Properties {
 		classClose?: HTMLButtonElement;
 		classOpen?: HTMLButtonElement;
+		openClose?: boolean;
+		background?: boolean;
 	}
 
 	class Popup {
 		properties: Properties;
 		classClose: HTMLButtonElement;
 		classOpen: HTMLButtonElement;
-
+		openClose: boolean = false;
+		background: boolean = false;
+		backgroundElement = document.querySelector('.black');
 		constructor(popup: Element, properties: Properties) {
 			this.classOpen = properties.classOpen;
 			this.classClose = properties.classClose;
+			this.background = properties.background;
+			this.openClose = properties.openClose;
 
-			if (this.classOpen) {
+			if (this.openClose) {
+				this.classOpen.addEventListener('click', () => {
+					popup.classList.toggle('active');
+					if (this.background) {
+						this.backgroundElement.classList.toggle('active');
+					}
+				});
+			} else {
 				this.classOpen.addEventListener('click', () => {
 					popup.classList.add('active');
+					if (this.background) {
+						this.backgroundElement.classList.add('active');
+					}
 				});
 			}
 
 			if (this.classClose) {
 				this.classClose.addEventListener('click', () => {
 					popup.classList.remove('active');
+					if (this.background) {
+						this.backgroundElement.classList.remove('active');
+					}
 				});
 			}
 		}
@@ -181,6 +200,16 @@ const popupFN = () => {
 	const search = new Popup(searchPopup, {
 		classClose: searchPopupClose,
 		classOpen: searchPopupOpen,
+	});
+
+	const catalogPopup = document.querySelector('.catalog-popup') as Element;
+	const catalogPopupClose = document.querySelector('#CloseCatalog') as HTMLButtonElement;
+	const catalogPopupOpen = document.querySelector('#OpenCatalog') as HTMLButtonElement;
+	const catalog = new Popup(catalogPopup, {
+		classClose: catalogPopupClose,
+		classOpen: catalogPopupOpen,
+		openClose: true,
+		background: true,
 	});
 };
 
