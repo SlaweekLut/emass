@@ -145,3 +145,43 @@ const choice = () => {
 };
 
 choice();
+
+const popupFN = () => {
+	interface Properties {
+		classClose?: HTMLButtonElement;
+		classOpen?: HTMLButtonElement;
+	}
+
+	class Popup {
+		properties: Properties;
+		classClose: HTMLButtonElement;
+		classOpen: HTMLButtonElement;
+
+		constructor(popup: Element, properties: Properties) {
+			this.classOpen = properties.classOpen;
+			this.classClose = properties.classClose;
+
+			if (this.classOpen) {
+				this.classOpen.addEventListener('click', () => {
+					popup.classList.add('active');
+				});
+			}
+
+			if (this.classClose) {
+				this.classClose.addEventListener('click', () => {
+					popup.classList.remove('active');
+				});
+			}
+		}
+	}
+
+	const searchPopup = document.querySelector('.search-popup') as Element;
+	const searchPopupClose = document.querySelector('#closeSearch') as HTMLButtonElement;
+	const searchPopupOpen = document.querySelector('#openSearch') as HTMLButtonElement;
+	const search = new Popup(searchPopup, {
+		classClose: searchPopupClose,
+		classOpen: searchPopupOpen,
+	});
+};
+
+popupFN();

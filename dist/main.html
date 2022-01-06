@@ -12,7 +12,21 @@
       <div class="container"><a class="container__logo" href="#" tabindex="-1"> <img src="assets/img/logo.png" alt="Логотип"></a>
         <nav class="nav"> <a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Помощь</a><a class="nav__item" href="#">Lookbook</a><a class="nav__item" href="#">Новости</a><a class="nav__item" href="#">Блог</a></nav>
         <nav class="nav-buttons"> 
-          <button class="nav-buttons__button"> <img src="assets/img/icon-search.png" alt="Поиск"></button><a class="nav-buttons__item" href="#"> <img src="assets/img/icon-user.png" alt="Пользователь"></a><a class="nav-buttons__item nav-buttons__item--notification nav-buttons__item--small" href="#"> <img src="assets/img/icon-weight.png" alt="Весы"></a><a class="nav-buttons__item nav-buttons__item--notification nav-buttons__item--small" href="#"> <img src="assets/img/icon-favorite.png" alt="Понравившееся"></a><a class="nav-buttons__item nav-buttons__item--notification" href="#" data-count="2"> <img src="assets/img/icon-cart.png" alt="Корзина"></a>
+          <button class="nav-buttons__button" id="openSearch"> <img src="assets/img/icon-search.png" alt="Поиск"></button>
+          <div class="search-popup"> 
+            <div class="search-popup__header">
+              <button class="nav-buttons__button"><img src="assets/img/icon-search.png" alt="Поиск"></button>
+              <input class="search-popup__input" type="text" placeholder="Поиск...">
+              <button class="search-popup__close" id="closeSearch"></button>
+            </div>
+            <div class="search-popup__content"> <a class="search-popup__item" href="#"> <img class="search-popup__img" src="assets/img/img-main-4.png" alt="Поиск">
+                <div class="search-popup__title">Шуба</div>
+                <div class="search-popup__price">314 грн</div></a><a class="search-popup__item" href="#"> <img class="search-popup__img" src="assets/img/img-main-4.png" alt="Поиск">
+                <div class="search-popup__title">Шуба</div>
+                <div class="search-popup__price">314 грн</div></a><a class="search-popup__item" href="#"> <img class="search-popup__img" src="assets/img/img-main-4.png" alt="Поиск">
+                <div class="search-popup__title">Шуба</div>
+                <div class="search-popup__price">314 грн</div></a><a class="search-popup__more" href="#">Смотреть еще</a></div>
+          </div><a class="nav-buttons__item" href="#"> <img src="assets/img/icon-user.png" alt="Пользователь"></a><a class="nav-buttons__item nav-buttons__item--notification nav-buttons__item--small" href="#"> <img src="assets/img/icon-weight.png" alt="Весы"></a><a class="nav-buttons__item nav-buttons__item--notification nav-buttons__item--small" href="#"> <img src="assets/img/icon-favorite.png" alt="Понравившееся"></a><a class="nav-buttons__item nav-buttons__item--notification" href="#" data-count="2"> <img src="assets/img/icon-cart.png" alt="Корзина"></a>
           <div class="lang js-dropdown">
             <p class="lang__header js-dropdown-header" tabindex="0"><span class="lang__value js-dropdown-value">Рус</span><img src="assets/img/icon-dropdown.svg" alt="Выпадающий список"></p>
             <div class="lang__list js-dropdown-list" tabindex="-1">

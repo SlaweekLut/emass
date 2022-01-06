@@ -153,6 +153,7 @@
 }
 
 .nav-buttons {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,6 +167,7 @@
 
 .nav-buttons__button {
   width: 24px;
+  height: 24px;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -261,6 +263,119 @@
   font-family: "Open Sans";
   font-weight: 300;
   white-space: nowrap;
+}
+
+.search-popup {
+  display: none;
+  top: -5px;
+  left: -20px;
+  background-color: #FFFFFF;
+  z-index: 3;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.search-popup.active {
+  display: block;
+}
+
+.search-popup__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.search-popup__input {
+  height: 24px;
+  margin: 0px 25px;
+  border: 0;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.search-popup__close {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-popup__close::after,
+.search-popup__close::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  background: #000000;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.search-popup__close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.search-popup__item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "img title" "img price";
+  gap: 5px 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.search-popup__img {
+  grid-area: img;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 40px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.search-popup__title {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.search-popup__price {
+  color: #000000;
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.search-popup__more {
+  color: #cc9999;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
 }
 
 /** Main **/

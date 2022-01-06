@@ -18,8 +18,29 @@ html(lang="en")
 					a._item(href="#") Новости
 					a._item(href="#") Блог
 				nav.nav-buttons 
-					button._button 
+					button._button#openSearch 
 						img(src="assets/img/icon-search.png", alt="Поиск")
+					.search-popup 
+						._header
+							button.nav-buttons__button
+								img(src="assets/img/icon-search.png", alt="Поиск")
+							input(type="text", placeholder='Поиск...')._input
+							button._close#closeSearch
+						._content 
+							a(href="#")._item 
+								img(src="assets/img/img-main-4.png", alt="Поиск")._img
+								._title Шуба
+								._price 314 грн
+							a(href="#")._item 
+								img(src="assets/img/img-main-4.png", alt="Поиск")._img
+								._title Шуба
+								._price 314 грн
+							a(href="#")._item 
+								img(src="assets/img/img-main-4.png", alt="Поиск")._img
+								._title Шуба
+								._price 314 грн
+							a(href="#")._more Смотреть еще
+
 					a._item(href="#") 
 						img(src="assets/img/icon-user.png", alt="Пользователь")
 					a._item.-notification.-small(href="#") 
@@ -42,7 +63,7 @@ html(lang="en")
 						._list.js-dropdown-list(tabindex='-1')
 							p._number +38 (050) 770-00-21 
 							p._number +38 (050) 770-00-21 
-
+			
 		main 
 			section
 				h2(style='font-size: 0; opacity: 0; position: absolute;') Коллекции
