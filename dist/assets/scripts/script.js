@@ -6,12 +6,18 @@ var dropdown = function () {
             this.isCanChoice = true;
             this.isCloseAfterChoice = true;
             this.isMultiopen = true;
+            this.isValueSet = true;
             this.isHover = properties.isHover;
             this.isCanChoice = properties.isCanChoice;
             this.isCloseAfterChoice = properties.isCloseAfterChoice;
             this.isMultiopen = properties.isMultiopen;
+            this.isValueSet = properties.isValueSet;
             elements.forEach(function (element) {
-                var header = element.querySelector('.js-dropdown-header'), value = element.querySelector('.js-dropdown-value'), list = element.querySelector('.js-dropdown-list'), listItem = list.childNodes;
+                var header = element.querySelector('.js-dropdown-header'), list = element.querySelector('.js-dropdown-list'), listItem = list.childNodes;
+                var value;
+                if (_this.isValueSet) {
+                    value = element.querySelector('.js-dropdown-value');
+                }
                 if (_this.isHover) {
                     element.addEventListener('mouseover', function () {
                         if (_this.isMultiopen) {
@@ -54,7 +60,9 @@ var dropdown = function () {
                 if (_this.isCanChoice) {
                     listItem.forEach(function (item) {
                         item.addEventListener('click', function () {
-                            value.innerHTML = item.innerHTML;
+                            if (_this.isValueSet) {
+                                value.innerHTML = item.innerHTML;
+                            }
                             if (_this.isCloseAfterChoice) {
                                 element.classList.remove('active');
                             }
@@ -88,7 +96,8 @@ var dropdown = function () {
         isHover: true,
         isCloseAfterChoice: true,
         isMultiopen: false,
-        isCanChoice: true
+        isCanChoice: true,
+        isValueSet: true
     });
     var numberContainer = document.querySelectorAll('.number');
     var numberDropdown = new Dropdown(numberContainer, {
@@ -96,6 +105,22 @@ var dropdown = function () {
         isCloseAfterChoice: false,
         isMultiopen: false,
         isCanChoice: false
+    });
+    var fillterContainer = document.querySelectorAll('.filter-dropdown');
+    var fillterDropdown = new Dropdown(fillterContainer, {
+        isHover: false,
+        isCloseAfterChoice: true,
+        isMultiopen: false,
+        isCanChoice: true,
+        isValueSet: false
+    });
+    var sortContainer = document.querySelectorAll('.sort-dropdown');
+    var sortDropdown = new Dropdown(sortContainer, {
+        isHover: false,
+        isCloseAfterChoice: true,
+        isMultiopen: false,
+        isCanChoice: true,
+        isValueSet: true
     });
 };
 dropdown();
@@ -183,3 +208,24 @@ var popupFN = function () {
     });
 };
 popupFN();
+var accardion = function () {
+    var Accardion = /** @class */ (function () {
+        function Accardion(elements) {
+            elements.forEach(function (element) {
+                var header = element.querySelector('.js-accardion-header'), list = element.querySelector('.js-accardion-list'), items = element.querySelectorAll('.js-accardion-item');
+                header.addEventListener('click', function () {
+                    element.classList.toggle('active');
+                });
+                items.forEach(function (item) {
+                    item.addEventListener('focus', function () {
+                        element.classList.add('active');
+                    });
+                });
+            });
+        }
+        return Accardion;
+    }());
+    var catalogAccardion = document.querySelectorAll('.js-accardion');
+    var catalogAccardionCreate = new Accardion(catalogAccardion);
+};
+accardion();

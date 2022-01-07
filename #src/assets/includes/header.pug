@@ -1,0 +1,84 @@
+button.black#CloseCatalog
+.catalog-popup
+	._column
+		a(href="#")._text <span>NEW</span> Новая коллекция
+		a(href="#")._text <span>SALE</span> Распродажа
+		a(href="#")._text <span>TOP</span> Топ продаж
+		a(href="#")._text <img src="assets/img/icon-mask.png" alt="Маски"> Дизайнерские маски
+	
+	._column
+		a(href="#")._text Дубленки
+		a(href="#")._text Пальто
+		a(href="#")._text Парки
+		a(href="#")._text Плащи
+		a(href="#")._text Эко шубы
+
+	._column
+		a(href="#")._text Блузки
+		a(href="#")._text Брюки
+		a(href="#")._text Костюмы
+		a(href="#")._text Платья
+		a(href="#")._text Рубашки
+		a(href="#")._text Брюки
+		a(href="#")._text Пиджаки
+
+	._column
+		a(href="#")._img
+			img(src="assets/img/img-catalog-1.png", alt="Каталог")
+
+header.header
+	.container
+		a._logo(href="#" tabindex='-1') 
+			img(src="assets/img/logo.png", alt="Логотип")
+		nav.nav 
+			button._item(href="#")#OpenCatalog Каталог
+			a._item(href="#") Помощь
+			a._item(href="#") Lookbook
+			a._item(href="#") Новости
+			a._item(href="#") Блог
+		nav.nav-buttons 
+			button._button#openSearch 
+				img(src="assets/img/icon-search.png", alt="Поиск")
+			.search-popup 
+				._header
+					.nav-buttons__button
+						img(src="assets/img/icon-search.png", alt="Поиск")
+					input(type="text", placeholder='Поиск...')._input
+					button._close#closeSearch
+				._content 
+					a(href="#")._item 
+						img(src="assets/img/img-main-4.png", alt="Поиск")._img
+						._title Шуба
+						._price 314 грн
+					a(href="#")._item 
+						img(src="assets/img/img-main-4.png", alt="Поиск")._img
+						._title Шуба
+						._price 314 грн
+					a(href="#")._item 
+						img(src="assets/img/img-main-4.png", alt="Поиск")._img
+						._title Шуба
+						._price 314 грн
+					a(href="#")._more Смотреть еще
+
+			a._item(href="#") 
+				img(src="assets/img/icon-user.png", alt="Пользователь")
+			a._item.-notification.-small(href="#") 
+				img(src="assets/img/icon-weight.png", alt="Весы")
+			a._item.-notification.-small(href="#") 
+				img(src="assets/img/icon-favorite.png", alt="Понравившееся")
+			a._item.-notification(href="#"  data-count='2') 
+				img(src="assets/img/icon-cart.png", alt="Корзина")
+			.lang.js-dropdown
+				p._header.js-dropdown-header(tabindex='0')
+					span._value.js-dropdown-value Рус
+					img(src="assets/img/icon-dropdown.svg", alt="Выпадающий список")
+				._list.js-dropdown-list(tabindex='-1')
+					button._button Рус
+					button._button Укр
+			.number.js-dropdown
+				p._header.js-dropdown-header(tabindex='0')
+					span._value.js-dropdown-value +38 (050) 770-00-21 
+					img(src="assets/img/icon-dropdown.svg", alt="Выпадающий список")
+				._list.js-dropdown-list(tabindex='-1')
+					p._number +38 (050) 770-00-21 
+					p._number +38 (050) 770-00-21 

@@ -4,6 +4,7 @@ const dropdown = () => {
 		isCanChoice?: boolean;
 		isMultiopen?: boolean;
 		isCloseAfterChoice?: boolean;
+		isValueSet?: boolean;
 	}
 
 	class Dropdown {
@@ -12,18 +13,25 @@ const dropdown = () => {
 		isCanChoice: boolean = true;
 		isCloseAfterChoice: boolean = true;
 		isMultiopen: boolean = true;
+		isValueSet: boolean = true;
 
 		constructor(elements: NodeListOf<Element>, properties: Properties) {
 			this.isHover = properties.isHover;
 			this.isCanChoice = properties.isCanChoice;
 			this.isCloseAfterChoice = properties.isCloseAfterChoice;
 			this.isMultiopen = properties.isMultiopen;
+			this.isValueSet = properties.isValueSet;
 
 			elements.forEach((element) => {
 				const header = element.querySelector('.js-dropdown-header') as Element,
-					value = element.querySelector('.js-dropdown-value') as Element,
 					list = element.querySelector('.js-dropdown-list') as Element,
 					listItem = list.childNodes as NodeListOf<Element>;
+
+				let value: Element;
+
+				if (this.isValueSet) {
+					value = element.querySelector('.js-dropdown-value') as Element;
+				}
 
 				if (this.isHover) {
 					element.addEventListener('mouseover', (): void => {
@@ -61,10 +69,14 @@ const dropdown = () => {
 						}
 					});
 				}
+
 				if (this.isCanChoice) {
 					listItem.forEach((item): void => {
 						item.addEventListener('click', (): void => {
-							value.innerHTML = item.innerHTML;
+							if (this.isValueSet) {
+								value.innerHTML = item.innerHTML;
+							}
+
 							if (this.isCloseAfterChoice) {
 								element.classList.remove('active');
 							}
@@ -99,6 +111,7 @@ const dropdown = () => {
 		isCloseAfterChoice: true,
 		isMultiopen: false,
 		isCanChoice: true,
+		isValueSet: true,
 	});
 
 	const numberContainer = document.querySelectorAll('.number') as NodeListOf<Element>;
@@ -107,6 +120,24 @@ const dropdown = () => {
 		isCloseAfterChoice: false,
 		isMultiopen: false,
 		isCanChoice: false,
+	});
+
+	const fillterContainer = document.querySelectorAll('.filter-dropdown') as NodeListOf<Element>;
+	const fillterDropdown = new Dropdown(fillterContainer, {
+		isHover: false,
+		isCloseAfterChoice: true,
+		isMultiopen: false,
+		isCanChoice: true,
+		isValueSet: false,
+	});
+
+	const sortContainer = document.querySelectorAll('.sort-dropdown') as NodeListOf<Element>;
+	const sortDropdown = new Dropdown(sortContainer, {
+		isHover: false,
+		isCloseAfterChoice: true,
+		isMultiopen: false,
+		isCanChoice: true,
+		isValueSet: true,
 	});
 };
 
@@ -214,3 +245,30 @@ const popupFN = () => {
 };
 
 popupFN();
+
+const accardion = () => {
+	class Accardion {
+		constructor(elements: NodeListOf<Element>) {
+			elements.forEach((element) => {
+				const header = element.querySelector('.js-accardion-header') as Element,
+					list = element.querySelector('.js-accardion-list') as Element,
+					items = element.querySelectorAll('.js-accardion-item') as NodeListOf<Element>;
+
+				header.addEventListener('click', () => {
+					element.classList.toggle('active');
+				});
+
+				items.forEach((item) => {
+					item.addEventListener('focus', () => {
+						element.classList.add('active');
+					});
+				});
+			});
+		}
+	}
+
+	const catalogAccardion = document.querySelectorAll('.js-accardion') as NodeListOf<Element>;
+	const catalogAccardionCreate = new Accardion(catalogAccardion);
+};
+
+accardion();
