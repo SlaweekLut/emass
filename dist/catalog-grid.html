@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Emass</title>
+  </head>
+</html>
+<body> 
+  <button class="black" id="CloseCatalog"></button>
+  <div class="catalog-popup">
+    <div class="catalog-popup__column"><a class="catalog-popup__text" href="#"><span>NEW</span> Новая коллекция</a><a class="catalog-popup__text" href="#"><span>SALE</span> Распродажа</a><a class="catalog-popup__text" href="#"><span>TOP</span> Топ продаж</a><a class="catalog-popup__text" href="#"><img src="assets/img/icon-mask.png" alt="Маски"> Дизайнерские маски</a></div>
+    <div class="catalog-popup__column"><a class="catalog-popup__text" href="#">Дубленки</a><a class="catalog-popup__text" href="#">Пальто</a><a class="catalog-popup__text" href="#">Парки</a><a class="catalog-popup__text" href="#">Плащи</a><a class="catalog-popup__text" href="#">Эко шубы</a></div>
+    <div class="catalog-popup__column"><a class="catalog-popup__text" href="#">Блузки</a><a class="catalog-popup__text" href="#">Брюки</a><a class="catalog-popup__text" href="#">Костюмы</a><a class="catalog-popup__text" href="#">Платья</a><a class="catalog-popup__text" href="#">Рубашки</a><a class="catalog-popup__text" href="#">Брюки</a><a class="catalog-popup__text" href="#">Пиджаки</a></div>
+    <div class="catalog-popup__column"><a class="catalog-popup__img" href="#"><img src="assets/img/img-catalog-1.png" alt="Каталог"></a></div>
+  </div>
+  <header class="header">
+    <div class="container"><a class="container__logo" href="#" tabindex="-1"> <img src="assets/img/logo.png" alt="Логотип"></a>
+      <nav class="nav"> 
+        <button class="nav__item" href="#" id="OpenCatalog">Каталог</button><a class="nav__item" href="#">Помощь</a><a class="nav__item" href="#">Lookbook</a><a class="nav__item" href="#">Новости</a><a class="nav__item" href="#">Блог</a>
+      </nav>
+      <nav class="nav-buttons"> 
+        <button class="nav-buttons__button" id="openSearch"> <img src="assets/img/icon-search.png" alt="Поиск"></button>
+        <div class="search-popup"> 
+          <div class="search-popup__header">
+            <div class="nav-buttons__button"><img src="assets/img/icon-search.png" alt="Поиск"></div>
+            <input class="search-popup__input" type="text" placeholder="Поиск...">
+            <button class="search-popup__close" id="closeSearch"></button>
+          </div>
+          <div class="search-popup__content"> <a class="search-popup__item" href="#"> <img class="search-popup__img" src="assets/img/img-main-4.png" alt="Поиск">
+              <div class="search-popup__title">Шуба</div>
+              <div class="search-popup__price">314 грн</div></a><a class="search-popup__item" href="#"> <img class="search-popup__img" src="assets/img/img-main-4.png" alt="Поиск">
+              <div class="search-popup__title">Шуба</div>
+              <div class="search-popup__price">314 грн</div></a><a class="search-popup__item" href="#"> <img class="search-popup__img" src="assets/img/img-main-4.png" alt="Поиск">
+              <div class="search-popup__title">Шуба</div>
+              <div class="search-popup__price">314 грн</div></a><a class="search-popup__more" href="#">Смотреть еще</a></div>
+        </div><a class="nav-buttons__item" href="#"> <img src="assets/img/icon-user.png" alt="Пользователь"></a><a class="nav-buttons__item nav-buttons__item--notification nav-buttons__item--small" href="#"> <img src="assets/img/icon-weight.png" alt="Весы"></a><a class="nav-buttons__item nav-buttons__item--notification nav-buttons__item--small" href="#"> <img src="assets/img/icon-favorite.png" alt="Понравившееся"></a><a class="nav-buttons__item nav-buttons__item--notification" href="#" data-count="2"> <img src="assets/img/icon-cart.png" alt="Корзина"></a>
+        <div class="lang js-dropdown">
+          <p class="lang__header js-dropdown-header" tabindex="0"><span class="lang__value js-dropdown-value">Рус</span><img src="assets/img/icon-dropdown.svg" alt="Выпадающий список"></p>
+          <div class="lang__list js-dropdown-list" tabindex="-1">
+            <button class="lang__button">Рус</button>
+            <button class="lang__button">Укр</button>
+          </div>
+        </div>
+        <div class="number js-dropdown">
+          <p class="number__header js-dropdown-header" tabindex="0"><span class="number__value js-dropdown-value">+38 (050) 770-00-21 </span><img src="assets/img/icon-dropdown.svg" alt="Выпадающий список"></p>
+          <div class="number__list js-dropdown-list" tabindex="-1">
+            <p class="number__number">+38 (050) 770-00-21 </p>
+            <p class="number__number">+38 (050) 770-00-21 </p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main> <a class="header-banner" href="#"> <img src="assets/img/img-banner-top.png" alt="Баннер"></a>
+    <nav class="line-nav"><a class="line-nav__item" href="#">Каталог</a><a class="line-nav__item" href="#">Пальто</a><a class="line-nav__item" href="#">Кашемировые пальто</a></nav>
+    <section class="catalog"> 
+      <h2 class="catalog__title">КАШИМИРОВЫЕ ПАЛЬТО</h2>
+      <div class="catalog__grid"> 
+        <div class="catalog-aside">
+          <div class="catalog-aside__accardion js-accardion"> 
+            <p class="catalog-aside__header js-accardion-header">Дубленки</p>
+            <div class="catalog-aside__list js-accardion-list"><a class="catalog-aside__link js-accardion-item" href="#">Демисезонные пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Пальто оверсайз</a><a class="catalog-aside__link js-accardion-item" href="#">Осенние пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Зимние пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Кашемировые пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Длинные пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Короткие пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Пальто с капюшоном</a><a class="catalog-aside__link js-accardion-item" href="#">Двубортные пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Пальто с мехом</a><a class="catalog-aside__link js-accardion-item" href="#">Полупальто</a><a class="catalog-aside__link js-accardion-item" href="#">Весенние пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Пальто больших размеров</a></div>
+          </div>
+          <div class="catalog-aside__accardion js-accardion"> 
+            <p class="catalog-aside__header js-accardion-header">Пальто</p>
+            <div class="catalog-aside__list js-accardion-list"><a class="catalog-aside__link js-accardion-item" href="#">Демисезонные пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Пальто оверсайз</a><a class="catalog-aside__link js-accardion-item" href="#">Осенние пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Зимние пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Кашемировые пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Длинные пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Короткие пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Пальто с капюшоном</a><a class="catalog-aside__link js-accardion-item" href="#">Двубортные пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Пальто с мехом</a><a class="catalog-aside__link js-accardion-item" href="#">Полупальто</a><a class="catalog-aside__link js-accardion-item" href="#">Весенние пальто</a><a class="catalog-aside__link js-accardion-item" href="#">Пальто больших размеров</a></div>
+          </div><a class="catalog-aside__banner" href="#"> <img src="assets/img/img-catalog-aside-1.png" alt="Баннер"></a><a class="catalog-aside__banner" href="#"> <img src="assets/img/img-catalog-aside-2.png" alt="Баннер"></a>
+        </div>
+        <div class="catalog-filter"> 
+          <div class="filter"> 
+            <div class="filter-dropdown js-dropdown">
+              <div class="filter-dropdown__header js-dropdown-header">Размеры (2) <img src='assets/img/icon-dropdown.svg' alt='Выпадающее меню' /></div>
+              <div class="filter-dropdown__list js-dropdown-list">
+                <button class="filter-dropdown__item">S </button>
+                <button class="filter-dropdown__item">M </button>
+              </div>
+            </div>
+            <div class="filter-dropdown js-dropdown">
+              <div class="filter-dropdown__header js-dropdown-header">Цвет (3) <img src='assets/img/icon-dropdown.svg' alt='Выпадающее меню' /></div>
+              <div class="filter-dropdown__list js-dropdown-list">
+                <button class="filter-dropdown__item">Черный</button>
+                <button class="filter-dropdown__item">Черный</button>
+                <button class="filter-dropdown__item">Черный</button>
+              </div>
+            </div>
+            <div class="filter-dropdown js-dropdown">
+              <div class="filter-dropdown__header js-dropdown-header">Сезон <img src='assets/img/icon-dropdown.svg' alt='Выпадающее меню' /></div>
+              <div class="filter-dropdown__list js-dropdown-list">
+                <button class="filter-dropdown__item">Лето</button>
+                <button class="filter-dropdown__item">Осень</button>
+                <button class="filter-dropdown__item">Зима</button>
+                <button class="filter-dropdown__item">Весна</button>
+              </div>
+            </div>
+            <button class="filter-dropdown__all-filter">Все фильтры</button>
+          </div>
+          <div class="views">
+            <button class="views__button active"> 
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="13" height="13" rx="4" stroke="currentColor" stroke-width="2"></rect>
+                <rect x="18" y="1" width="13" height="13" rx="4" stroke="currentColor" stroke-width="2"></rect>
+                <rect x="1" y="18" width="13" height="13" rx="4" stroke="currentColor" stroke-width="2"></rect>
+                <rect x="18" y="18" width="13" height="13" rx="6.5" stroke="currentColor" stroke-width="2"></rect>
+              </svg>
+            </button>
+            <button class="views__button"> 
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"></rect>
+                <rect x="1" y="23" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"></rect>
+                <rect x="1" y="12" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"></rect>
+                <rect x="13" y="4" width="19" height="2" fill="currentColor"></rect>
+                <rect x="13" y="26" width="19" height="2" fill="currentColor"></rect>
+                <rect x="13" y="15" width="19" height="2" fill="currentColor"></rect>
+              </svg>
+            </button>
+            <button class="views__button"> 
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"></rect>
+                <rect x="15.5" y="5.5" width="7" height="7" rx="2.5" stroke="currentColor"></rect>
+                <rect x="24.5" y="5.5" width="7" height="7" rx="2.5" stroke="currentColor"></rect>
+                <rect x="15.5" y="24.5" width="7" height="7" rx="2.5" stroke="currentColor"></rect>
+                <rect x="24.5" y="24.5" width="7" height="7" rx="2.5" stroke="currentColor"></rect>
+                <rect x="15.5" y="15.5" width="7" height="7" rx="2.5" stroke="currentColor"></rect>
+                <rect x="5.5" y="24.5" width="7" height="7" rx="2.5" stroke="currentColor"></rect>
+                <rect x="5.5" y="15.5" width="7" height="7" rx="2.5" stroke="currentColor"></rect>
+                <rect x="24.5" y="15.5" width="7" height="7" rx="2.5" stroke="currentColor"></rect>
+              </svg>
+            </button>
+            <p class="views__sort">Сортировать:
+              <div class="sort-dropdown js-dropdown">
+                <div class="sort-dropdown__header js-dropdown-header"> <span class="js-dropdown-value">По новинкам </span><img src="assets/img/icon-dropdown.svg" alt="Выпадающее меню"></div>
+                <div class="sort-dropdown__list js-dropdown-list">
+                  <button class="sort-dropdown__item">По цене</button>
+                  <button class="sort-dropdown__item">По алфавиту</button>
+                </div>
+              </div>
+            </p>
+          </div>
+          <div class="active-filter"> 
+            <div class="active-filter__item">
+              <p class="active-filter__text">44</p>
+              <button class="active-filter__close"></button>
+            </div>
+            <div class="active-filter__item">
+              <p class="active-filter__text">46</p>
+              <button class="active-filter__close"></button>
+            </div>
+            <div class="active-filter__item">
+              <p class="active-filter__text">синий</p>
+              <button class="active-filter__close"></button>
+            </div>
+            <div class="active-filter__item">
+              <p class="active-filter__text">бежевый</p>
+              <button class="active-filter__close"></button>
+            </div>
+            <div class="active-filter__item">
+              <p class="active-filter__text">ваниль</p>
+              <button class="active-filter__close"></button>
+            </div>
+            <div class="active-filter__item">
+              <p class="active-filter__text">Сбросить все</p>
+              <button class="active-filter__close"></button>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-content-grid">
+          <div class="catalog-item-grid"> 
+            <div class="catalog-item-grid__wrapper-img"><img class="catalog-item-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто">
+              <div class="catalog-item-grid__wrapper-icons">
+                <div class="catalog-item-grid__corner catalog-item__discount catalog-item-grid__corner--top-left">SALE <br/> 20%</div><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right" src="assets/img/icon-zoom.png" alt="Увеличение"><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right-2" src="assets/img/icon-weight-gray.png" alt="Весы"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-right" src="assets/img/icon-video.png" alt="Видео"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-left" src="assets/img/icon-gift.png" alt="Подарок">
+              </div>
+            </div>
+            <div class="description-grid"> 
+              <div class="description-grid__gallery"> <img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"><img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="description-grid__header"> 
+                <div class="description-grid__column">
+                  <div class="description-grid__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="description-grid__price description-grid__price--discount">3 200 грн <del>3 700 грн </del> 	</div>
+                </div>
+              </div>
+              <div class="description-grid__sizes"> 
+                <p class="description-grid__size">42 <small>(2)</small></p>
+                <p class="description-grid__size">44 <small>(8)</small></p>
+                <p class="description-grid__size">46 <small>(2)</small></p>
+                <p class="description-grid__size">48 <small>(10)</small></p>
+              </div>
+              <div class="description-grid__buttons">
+                <button class="description-grid__button description-grid__button--buy">Купить</button>
+                <button class="description-grid__button description-grid__button--favorites"><img src="assets/img/icon-heart-catalog.png" alt="Избранное"></button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item-grid"> 
+            <div class="catalog-item-grid__wrapper-img"><img class="catalog-item-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто">
+              <div class="catalog-item-grid__wrapper-icons">
+                <div class="catalog-item-grid__corner catalog-item__discount catalog-item-grid__corner--top-left">SALE <br/> 20%</div><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right" src="assets/img/icon-zoom.png" alt="Увеличение"><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right-2" src="assets/img/icon-weight-gray.png" alt="Весы"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-right" src="assets/img/icon-video.png" alt="Видео"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-left" src="assets/img/icon-gift.png" alt="Подарок">
+              </div>
+            </div>
+            <div class="description-grid"> 
+              <div class="description-grid__gallery"> <img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"><img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="description-grid__header"> 
+                <div class="description-grid__column">
+                  <div class="description-grid__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="description-grid__price description-grid__price--discount">3 200 грн <del>3 700 грн </del> 	</div>
+                </div>
+              </div>
+              <div class="description-grid__sizes"> 
+                <p class="description-grid__size">42 <small>(2)</small></p>
+                <p class="description-grid__size">44 <small>(8)</small></p>
+                <p class="description-grid__size">46 <small>(2)</small></p>
+                <p class="description-grid__size">48 <small>(10)</small></p>
+              </div>
+              <div class="description-grid__buttons">
+                <button class="description-grid__button description-grid__button--buy">Купить</button>
+                <button class="description-grid__button description-grid__button--favorites"><img src="assets/img/icon-heart-catalog.png" alt="Избранное"></button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item-grid"> 
+            <div class="catalog-item-grid__wrapper-img"><img class="catalog-item-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто">
+              <div class="catalog-item-grid__wrapper-icons">
+                <div class="catalog-item-grid__corner catalog-item__discount catalog-item-grid__corner--top-left">SALE <br/> 20%</div><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right" src="assets/img/icon-zoom.png" alt="Увеличение"><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right-2" src="assets/img/icon-weight-gray.png" alt="Весы"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-right" src="assets/img/icon-video.png" alt="Видео"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-left" src="assets/img/icon-gift.png" alt="Подарок">
+              </div>
+            </div>
+            <div class="description-grid"> 
+              <div class="description-grid__gallery"> <img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"><img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="description-grid__header"> 
+                <div class="description-grid__column">
+                  <div class="description-grid__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="description-grid__price description-grid__price--discount">3 200 грн <del>3 700 грн </del> 	</div>
+                </div>
+              </div>
+              <div class="description-grid__sizes"> 
+                <p class="description-grid__size">42 <small>(2)</small></p>
+                <p class="description-grid__size">44 <small>(8)</small></p>
+                <p class="description-grid__size">46 <small>(2)</small></p>
+                <p class="description-grid__size">48 <small>(10)</small></p>
+              </div>
+              <div class="description-grid__buttons">
+                <button class="description-grid__button description-grid__button--buy">Купить</button>
+                <button class="description-grid__button description-grid__button--favorites"><img src="assets/img/icon-heart-catalog.png" alt="Избранное"></button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item-grid"> 
+            <div class="catalog-item-grid__wrapper-img"><img class="catalog-item-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто">
+              <div class="catalog-item-grid__wrapper-icons">
+                <div class="catalog-item-grid__corner catalog-item__discount catalog-item__discount--top catalog-item-grid__corner--top-left">TOP</div><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right" src="assets/img/icon-zoom.png" alt="Увеличение"><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right-2" src="assets/img/icon-weight-gray.png" alt="Весы"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-right" src="assets/img/icon-video.png" alt="Видео"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-left" src="assets/img/icon-gift.png" alt="Подарок">
+              </div>
+            </div>
+            <div class="description-grid"> 
+              <div class="description-grid__gallery"> <img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"><img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="description-grid__header"> 
+                <div class="description-grid__column">
+                  <div class="description-grid__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="description-grid__price description-grid__price--discount">3 200 грн <del>3 700 грн </del> 	</div>
+                </div>
+              </div>
+              <div class="description-grid__sizes"> 
+                <p class="description-grid__size">42 <small>(2)</small></p>
+                <p class="description-grid__size">44 <small>(8)</small></p>
+                <p class="description-grid__size">46 <small>(2)</small></p>
+                <p class="description-grid__size">48 <small>(10)</small></p>
+              </div>
+              <div class="description-grid__buttons">
+                <button class="description-grid__button description-grid__button--buy">Купить</button>
+                <button class="description-grid__button description-grid__button--favorites"><img src="assets/img/icon-heart-catalog.png" alt="Избранное"></button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item-grid"> 
+            <div class="catalog-item-grid__wrapper-img"><img class="catalog-item-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто">
+              <div class="catalog-item-grid__wrapper-icons">
+                <div class="catalog-item-grid__corner catalog-item__discount catalog-item-grid__corner--top-left">SALE <br/> 20%</div><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right" src="assets/img/icon-zoom.png" alt="Увеличение"><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right-2" src="assets/img/icon-weight-gray.png" alt="Весы"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-right" src="assets/img/icon-video.png" alt="Видео"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-left" src="assets/img/icon-gift.png" alt="Подарок">
+              </div>
+            </div>
+            <div class="description-grid"> 
+              <div class="description-grid__gallery"> <img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"><img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="description-grid__header"> 
+                <div class="description-grid__column">
+                  <div class="description-grid__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="description-grid__price description-grid__price--discount">3 200 грн <del>3 700 грн </del> 	</div>
+                </div>
+              </div>
+              <div class="description-grid__sizes"> 
+                <p class="description-grid__size">42 <small>(2)</small></p>
+                <p class="description-grid__size">44 <small>(8)</small></p>
+                <p class="description-grid__size">46 <small>(2)</small></p>
+                <p class="description-grid__size">48 <small>(10)</small></p>
+              </div>
+              <div class="description-grid__buttons">
+                <button class="description-grid__button description-grid__button--buy">Купить</button>
+                <button class="description-grid__button description-grid__button--favorites"><img src="assets/img/icon-heart-catalog.png" alt="Избранное"></button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item-grid"> 
+            <div class="catalog-item-grid__wrapper-img"><img class="catalog-item-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто">
+              <div class="catalog-item-grid__wrapper-icons">
+                <div class="catalog-item-grid__corner catalog-item__discount catalog-item-grid__corner--top-left">SALE <br/> 20%</div><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right" src="assets/img/icon-zoom.png" alt="Увеличение"><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right-2" src="assets/img/icon-weight-gray.png" alt="Весы"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-right" src="assets/img/icon-video.png" alt="Видео"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-left" src="assets/img/icon-gift.png" alt="Подарок">
+              </div>
+            </div>
+            <div class="description-grid"> 
+              <div class="description-grid__gallery"> <img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"><img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="description-grid__header"> 
+                <div class="description-grid__column">
+                  <div class="description-grid__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="description-grid__price description-grid__price--discount">3 200 грн <del>3 700 грн </del> 	</div>
+                </div>
+              </div>
+              <div class="description-grid__sizes"> 
+                <p class="description-grid__size">42 <small>(2)</small></p>
+                <p class="description-grid__size">44 <small>(8)</small></p>
+                <p class="description-grid__size">46 <small>(2)</small></p>
+                <p class="description-grid__size">48 <small>(10)</small></p>
+              </div>
+              <div class="description-grid__buttons">
+                <button class="description-grid__button description-grid__button--buy">Купить</button>
+                <button class="description-grid__button description-grid__button--favorites"><img src="assets/img/icon-heart-catalog.png" alt="Избранное"></button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item-grid"> 
+            <div class="catalog-item-grid__wrapper-img"><img class="catalog-item-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто">
+              <div class="catalog-item-grid__wrapper-icons">
+                <div class="catalog-item-grid__corner catalog-item__discount catalog-item-grid__corner--top-left">SALE <br/> 20%</div><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right" src="assets/img/icon-zoom.png" alt="Увеличение"><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right-2" src="assets/img/icon-weight-gray.png" alt="Весы"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-right" src="assets/img/icon-video.png" alt="Видео"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-left" src="assets/img/icon-gift.png" alt="Подарок">
+              </div>
+            </div>
+            <div class="description-grid"> 
+              <div class="description-grid__gallery"> <img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"><img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="description-grid__header"> 
+                <div class="description-grid__column">
+                  <div class="description-grid__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="description-grid__price description-grid__price--discount">3 200 грн <del>3 700 грн </del> 	</div>
+                </div>
+              </div>
+              <div class="description-grid__sizes"> 
+                <p class="description-grid__size">42 <small>(2)</small></p>
+                <p class="description-grid__size">44 <small>(8)</small></p>
+                <p class="description-grid__size">46 <small>(2)</small></p>
+                <p class="description-grid__size">48 <small>(10)</small></p>
+              </div>
+              <div class="description-grid__buttons">
+                <button class="description-grid__button description-grid__button--buy">Купить</button>
+                <button class="description-grid__button description-grid__button--favorites"><img src="assets/img/icon-heart-catalog.png" alt="Избранное"></button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item-grid"> 
+            <div class="catalog-item-grid__wrapper-img"><img class="catalog-item-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто">
+              <div class="catalog-item-grid__wrapper-icons">
+                <div class="catalog-item-grid__corner catalog-item__discount catalog-item__discount--new catalog-item-grid__corner--top-left">NEW</div><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right" src="assets/img/icon-zoom.png" alt="Увеличение"><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right-2" src="assets/img/icon-weight-gray.png" alt="Весы"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-right" src="assets/img/icon-video.png" alt="Видео"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-left" src="assets/img/icon-gift.png" alt="Подарок">
+              </div>
+            </div>
+            <div class="description-grid"> 
+              <div class="description-grid__gallery"> <img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"><img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="description-grid__header"> 
+                <div class="description-grid__column">
+                  <div class="description-grid__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="description-grid__price description-grid__price--discount">3 200 грн <del>3 700 грн </del> 	</div>
+                </div>
+              </div>
+              <div class="description-grid__sizes"> 
+                <p class="description-grid__size">42 <small>(2)</small></p>
+                <p class="description-grid__size">44 <small>(8)</small></p>
+                <p class="description-grid__size">46 <small>(2)</small></p>
+                <p class="description-grid__size">48 <small>(10)</small></p>
+              </div>
+              <div class="description-grid__buttons">
+                <button class="description-grid__button description-grid__button--buy">Купить</button>
+                <button class="description-grid__button description-grid__button--favorites"><img src="assets/img/icon-heart-catalog.png" alt="Избранное"></button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item-grid"> 
+            <div class="catalog-item-grid__wrapper-img"><img class="catalog-item-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто">
+              <div class="catalog-item-grid__wrapper-icons">
+                <div class="catalog-item-grid__corner catalog-item__discount catalog-item-grid__corner--top-left">SALE <br/> 20%</div><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right" src="assets/img/icon-zoom.png" alt="Увеличение"><img class="catalog-item-grid__corner catalog-item-grid__corner--top-right-2" src="assets/img/icon-weight-gray.png" alt="Весы"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-right" src="assets/img/icon-video.png" alt="Видео"><img class="catalog-item-grid__corner catalog-item-grid__corner--bottom-left" src="assets/img/icon-gift.png" alt="Подарок">
+              </div>
+            </div>
+            <div class="description-grid"> 
+              <div class="description-grid__gallery"> <img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"><img class="description-grid__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="description-grid__header"> 
+                <div class="description-grid__column">
+                  <div class="description-grid__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="description-grid__price description-grid__price--discount">3 200 грн <del>3 700 грн </del> 	</div>
+                </div>
+              </div>
+              <div class="description-grid__sizes"> 
+                <p class="description-grid__size">42 <small>(2)</small></p>
+                <p class="description-grid__size">44 <small>(8)</small></p>
+                <p class="description-grid__size">46 <small>(2)</small></p>
+                <p class="description-grid__size">48 <small>(10)</small></p>
+              </div>
+              <div class="description-grid__buttons">
+                <button class="description-grid__button description-grid__button--buy">Купить</button>
+                <button class="description-grid__button description-grid__button--favorites"><img src="assets/img/icon-heart-catalog.png" alt="Избранное"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination"> 
+          <button class="pagination__button">Показать ещё <img src="assets/img/icon-more.png" alt="Больше"/></button>
+          <div class="pagination__bullets"> 
+            <button class="pagination__bullet active">1</button>
+            <button class="pagination__bullet">2</button>
+            <button class="pagination__bullet">3</button>
+            <button class="pagination__bullet">4</button>
+            <button class="pagination__bullet">5</button>
+            <div class="pagination__bullet pagination__bullet--dots">...</div>
+            <button class="pagination__bullet">12</button>
+          </div>
+        </div>
+        <div class="catalog-search">
+          <h3 class="catalog-search__title">С этими товарами ищут</h3>
+          <div class="catalog-search__row"><a class="catalog-search__link" href="#">костюм</a><a class="catalog-search__link" href="#">блузка</a><a class="catalog-search__link" href="#">брюки</a><a class="catalog-search__link" href="#">куртка женская весна</a><a class="catalog-search__link" href="#">пальто зимнее женское</a><a class="catalog-search__link" href="#">пальто женское в клетку</a><a class="catalog-search__link" href="#">пальто женское зимнее шерстяное</a><a class="catalog-search__link" href="#">пальто женское зимнее </a><a class="catalog-search__link" href="#">пальто женское зимнее шерстяное</a><a class="catalog-search__link" href="#">пальто женское </a><a class="catalog-search__link" href="#">пальто зимнее шерстяное</a></div>
+        </div>
+        <div class="catalog-viewed"> 
+          <h3 class="catalog-viewed__title">С этими товарами ищут</h3>
+          <div class="catalog-viewed__row">
+            <div class="catalog-viewed-item">
+              <div class="catalog-viewed-item__wrapper-img"><img class="catalog-viewed-item__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="catalog-viewed-item__header"> 
+                <div class="catalog-viewed-item__column">
+                  <div class="catalog-viewed-item__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="catalog-viewed-item__price catalog-viewed-item__price--discount">3 200 грн <del>3 700 грн </del></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-viewed-item">
+              <div class="catalog-viewed-item__wrapper-img"><img class="catalog-viewed-item__img" src="assets/img/img-catalog-2.png" alt="Пальто"></div>
+              <div class="catalog-viewed-item__header"> 
+                <div class="catalog-viewed-item__column">
+                  <div class="catalog-viewed-item__title">Кашемировое пальто «Рэй» какао	</div>
+                  <div class="catalog-viewed-item__price">3 200 грн</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about"> 
+      <h2 class="about__title">Компания "Emass" — производитель стильной и качественной женской одежды</h2>
+      <p class="about__text">Основным направлением нашей деятельности является производство и оптовая продажа верхней женской одежды. В первую очередь — это пальто, куртки, плащи, ветровки. <br/><br/>Мы реализуем крупным и мелким оптом верхнюю одежду во все регионы Украины и ближнего зарубежья, предоставляем эксклюзивные дистрибьюторские условия сотрудничества нашим постоянным клиентам. <br/><br/>Главная задача, которая стоит перед всем штатом, это высокое качество нашей продукции. Оригинальные модели с соблюдением всех тенденций современной моды, безупречная посадка, высокое качество используемых тканей и фурнитуры- это результат работы всего нашего коллектива, любящего свое дело. <br/><br/>Процесс производства каждой модели долгий и кропотливый. Прежде чем представить Вам новую модель, наши модельеры проделывают большую работу: детально изучают тенденции мира моды, учитывают потребительский спрос, актуальность тех или иных тканей и цветов. И только с учетом всех этих моментов создается эскиз новой оригинальной модели. Безупречная посадка наших моделей достигается благодаря отлаженной работы команды конструкторов. Ни одна единица не может быть запущена в производство без доведения ее до максимально идеальной посадки.</p><a class="about__more" href="#">Читать далее  <img src="assets/img/icon-dropdown.svg" alt="Смотреть больше"></a>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer container"> 
+      <div class="footer__top-part">
+        <div class="footer-column">
+          <h3 class="footer-column__title">Каталог</h3><a class="footer-column__link" href="#">Новая коллекция</a><a class="footer-column__link" href="#">Дубленки</a><a class="footer-column__link" href="#">Пальто</a><a class="footer-column__link" href="#">Парки</a><a class="footer-column__link" href="#">Плащи</a><a class="footer-column__link" href="#">Эко шубы</a><a class="footer-column__link" href="#">Легкая одежда</a><a class="footer-column__link" href="#">Распродажа</a>
+        </div>
+        <div class="footer-column"> 
+          <h3 class="footer-column__title">Помощь</h3><a class="footer-column__link" href="#">Оптовое предложение </a><a class="footer-column__link" href="#">Возврат товара</a><a class="footer-column__link" href="#">Доставка и оплата</a><a class="footer-column__link" href="#">Таблица размеров</a><a class="footer-column__link" href="#">Личный кабинет</a><a class="footer-column__link" href="#">Политика приватности </a><a class="footer-column__link" href="#">Карта сайта </a>
+        </div>
+        <div class="footer-column"> 
+          <h3 class="footer-column__title">О компании</h3><a class="footer-column__link" href="#">О нас</a><a class="footer-column__link" href="#">Контакты</a><a class="footer-column__link" href="#">Отзывы</a><a class="footer-column__link" href="#">Lookbook</a><a class="footer-column__link" href="#">Блог</a><a class="footer-column__link" href="#">Новости</a><a class="footer-column__link" href="#">Подарочный сертификат</a>
+        </div>
+        <div class="footer-column"> 
+          <div class="footer-column__socials"> <a class="footer-column__social" href="#"><img src="assets/img/icon-facebook.svg" alt="facebook"></a><a class="footer-column__social" href="#"><img src="assets/img/icon-instagram.png" alt="instagram"></a><a class="footer-column__social" href="#"><img src="assets/img/icon-youtube.svg" alt="youtube"></a></div>
+          <div class="footer-column__number">0-800-33-00-21 <br/> (бесплатно)</div>
+          <div class="footer-column__languages"> <a class="footer-column__lang active" href="#">Рус</a><a class="footer-column__lang" href="#">Укр</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom-part"> <img src="assets/img/icon-company-1.png" alt="La Boutique"><img src="assets/img/icon-company-2.png" alt="Lamoda"><img src="assets/img/icon-company-3.png" alt="Rozetka"></div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="assets/scripts/script.min.js"> </script>
+  <script src="assets/scripts/script.ts.min.js"> </script>
+</body>

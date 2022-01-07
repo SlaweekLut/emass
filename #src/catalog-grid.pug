@@ -1,0 +1,468 @@
+include assets/includes/head.pug
+body 
+
+	include assets/includes/header.pug
+	
+	main 
+
+		a.header-banner(href="#") 
+			img(src="assets/img/img-banner-top.png", alt="Баннер")
+
+		nav.line-nav
+			a(href="#")._item Каталог
+			a(href="#")._item Пальто
+			a(href="#")._item Кашемировые пальто
+
+		section.catalog 
+			h2._title КАШИМИРОВЫЕ ПАЛЬТО
+			
+			._grid 
+				.catalog-aside
+
+					._accardion.js-accardion 
+						p._header.js-accardion-header Дубленки
+						._list.js-accardion-list
+							a(href="#")._link.js-accardion-item Демисезонные пальто
+							a(href="#")._link.js-accardion-item Пальто оверсайз
+							a(href="#")._link.js-accardion-item Осенние пальто
+							a(href="#")._link.js-accardion-item Зимние пальто
+							a(href="#")._link.js-accardion-item Кашемировые пальто
+							a(href="#")._link.js-accardion-item Длинные пальто
+							a(href="#")._link.js-accardion-item Короткие пальто
+							a(href="#")._link.js-accardion-item Пальто с капюшоном
+							a(href="#")._link.js-accardion-item Двубортные пальто
+							a(href="#")._link.js-accardion-item Пальто с мехом
+							a(href="#")._link.js-accardion-item Полупальто
+							a(href="#")._link.js-accardion-item Весенние пальто
+							a(href="#")._link.js-accardion-item Пальто больших размеров
+
+					._accardion.js-accardion 
+						p._header.js-accardion-header Пальто
+						._list.js-accardion-list
+							a(href="#")._link.js-accardion-item Демисезонные пальто
+							a(href="#")._link.js-accardion-item Пальто оверсайз
+							a(href="#")._link.js-accardion-item Осенние пальто
+							a(href="#")._link.js-accardion-item Зимние пальто
+							a(href="#")._link.js-accardion-item Кашемировые пальто
+							a(href="#")._link.js-accardion-item Длинные пальто
+							a(href="#")._link.js-accardion-item Короткие пальто
+							a(href="#")._link.js-accardion-item Пальто с капюшоном
+							a(href="#")._link.js-accardion-item Двубортные пальто
+							a(href="#")._link.js-accardion-item Пальто с мехом
+							a(href="#")._link.js-accardion-item Полупальто
+							a(href="#")._link.js-accardion-item Весенние пальто
+							a(href="#")._link.js-accardion-item Пальто больших размеров
+
+					a(href="#")._banner 
+						img(src="assets/img/img-catalog-aside-1.png", alt="Баннер")
+
+					a(href="#")._banner 
+						img(src="assets/img/img-catalog-aside-2.png", alt="Баннер")
+
+				.catalog-filter 
+					.filter 
+						.filter-dropdown.js-dropdown
+							._header.js-dropdown-header Размеры (2) <img src='assets/img/icon-dropdown.svg' alt='Выпадающее меню' />
+							._list.js-dropdown-list
+								button._item S 
+								button._item M 
+
+						.filter-dropdown.js-dropdown
+							._header.js-dropdown-header Цвет (3) <img src='assets/img/icon-dropdown.svg' alt='Выпадающее меню' />
+							._list.js-dropdown-list
+								button._item Черный
+								button._item Черный
+								button._item Черный
+
+						.filter-dropdown.js-dropdown
+							._header.js-dropdown-header Сезон <img src='assets/img/icon-dropdown.svg' alt='Выпадающее меню' />
+							._list.js-dropdown-list
+								button._item Лето
+								button._item Осень
+								button._item Зима
+								button._item Весна
+
+						button.filter-dropdown__all-filter Все фильтры
+
+					.views
+						button._button.active 
+							svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+								rect(x="1" y="1" width="13" height="13" rx="4" stroke="currentColor" stroke-width="2")
+								rect(x="18" y="1" width="13" height="13" rx="4" stroke="currentColor" stroke-width="2")
+								rect(x="1" y="18" width="13" height="13" rx="4" stroke="currentColor" stroke-width="2")
+								rect(x="18" y="18" width="13" height="13" rx="6.5" stroke="currentColor" stroke-width="2")
+
+						button._button 
+							svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+								rect(x="1" y="1" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2")
+								rect(x="1" y="23" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2")
+								rect(x="1" y="12" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2")
+								rect(x="13" y="4" width="19" height="2" fill="currentColor")
+								rect(x="13" y="26" width="19" height="2" fill="currentColor")
+								rect(x="13" y="15" width="19" height="2" fill="currentColor")
+						
+						button._button 
+							svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+								rect(x="1" y="1" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2")
+								rect(x="15.5" y="5.5" width="7" height="7" rx="2.5" stroke="currentColor")
+								rect(x="24.5" y="5.5" width="7" height="7" rx="2.5" stroke="currentColor")
+								rect(x="15.5" y="24.5" width="7" height="7" rx="2.5" stroke="currentColor")
+								rect(x="24.5" y="24.5" width="7" height="7" rx="2.5" stroke="currentColor")
+								rect(x="15.5" y="15.5" width="7" height="7" rx="2.5" stroke="currentColor")
+								rect(x="5.5" y="24.5" width="7" height="7" rx="2.5" stroke="currentColor")
+								rect(x="5.5" y="15.5" width="7" height="7" rx="2.5" stroke="currentColor")
+								rect(x="24.5" y="15.5" width="7" height="7" rx="2.5" stroke="currentColor")
+						
+						p._sort Сортировать:
+							.sort-dropdown.js-dropdown
+								._header.js-dropdown-header 
+									span.js-dropdown-value По новинкам 
+									img(src='assets/img/icon-dropdown.svg' alt='Выпадающее меню')
+
+								._list.js-dropdown-list
+									button._item По цене
+									button._item По алфавиту
+
+					.active-filter 
+						._item
+							p._text 44
+							button._close
+						._item
+							p._text 46
+							button._close
+						._item
+							p._text синий
+							button._close
+						._item
+							p._text бежевый
+							button._close
+						._item
+							p._text ваниль
+							button._close
+						._item
+							p._text Сбросить все
+							button._close
+
+				.catalog-content-grid
+					.catalog-item-grid 
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._wrapper-icons
+								._corner.catalog-item__discount.-top-left SALE <br/> 20%
+								img(src="assets/img/icon-zoom.png", alt="Увеличение")._corner.-top-right
+								img(src="assets/img/icon-weight-gray.png", alt="Весы")._corner.-top-right-2
+								img(src="assets/img/icon-video.png", alt="Видео")._corner.-bottom-right
+								img(src="assets/img/icon-gift.png", alt="Подарок")._corner.-bottom-left
+
+						.description-grid 
+							._gallery 
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del> 	
+							
+							._sizes 
+								p._size 42 <small>(2)</small>
+								p._size 44 <small>(8)</small>
+								p._size 46 <small>(2)</small>
+								p._size 48 <small>(10)</small>
+							._buttons
+								button._button.-buy Купить
+								button._button.-favorites
+									img(src="assets/img/icon-heart-catalog.png", alt="Избранное")
+
+					.catalog-item-grid 
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._wrapper-icons
+								._corner.catalog-item__discount.-top-left SALE <br/> 20%
+								img(src="assets/img/icon-zoom.png", alt="Увеличение")._corner.-top-right
+								img(src="assets/img/icon-weight-gray.png", alt="Весы")._corner.-top-right-2
+								img(src="assets/img/icon-video.png", alt="Видео")._corner.-bottom-right
+								img(src="assets/img/icon-gift.png", alt="Подарок")._corner.-bottom-left
+
+						.description-grid 
+							._gallery 
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del> 	
+							
+							._sizes 
+								p._size 42 <small>(2)</small>
+								p._size 44 <small>(8)</small>
+								p._size 46 <small>(2)</small>
+								p._size 48 <small>(10)</small>
+							._buttons
+								button._button.-buy Купить
+								button._button.-favorites
+									img(src="assets/img/icon-heart-catalog.png", alt="Избранное")
+
+					.catalog-item-grid 
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._wrapper-icons
+								._corner.catalog-item__discount.-top-left SALE <br/> 20%
+								img(src="assets/img/icon-zoom.png", alt="Увеличение")._corner.-top-right
+								img(src="assets/img/icon-weight-gray.png", alt="Весы")._corner.-top-right-2
+								img(src="assets/img/icon-video.png", alt="Видео")._corner.-bottom-right
+								img(src="assets/img/icon-gift.png", alt="Подарок")._corner.-bottom-left
+
+						.description-grid 
+							._gallery 
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del> 	
+							
+							._sizes 
+								p._size 42 <small>(2)</small>
+								p._size 44 <small>(8)</small>
+								p._size 46 <small>(2)</small>
+								p._size 48 <small>(10)</small>
+							._buttons
+								button._button.-buy Купить
+								button._button.-favorites
+									img(src="assets/img/icon-heart-catalog.png", alt="Избранное")
+
+					.catalog-item-grid 
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._wrapper-icons
+								._corner.catalog-item__discount.catalog-item__discount--top.-top-left TOP
+								img(src="assets/img/icon-zoom.png", alt="Увеличение")._corner.-top-right
+								img(src="assets/img/icon-weight-gray.png", alt="Весы")._corner.-top-right-2
+								img(src="assets/img/icon-video.png", alt="Видео")._corner.-bottom-right
+								img(src="assets/img/icon-gift.png", alt="Подарок")._corner.-bottom-left
+
+						.description-grid 
+							._gallery 
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del> 	
+							
+							._sizes 
+								p._size 42 <small>(2)</small>
+								p._size 44 <small>(8)</small>
+								p._size 46 <small>(2)</small>
+								p._size 48 <small>(10)</small>
+							._buttons
+								button._button.-buy Купить
+								button._button.-favorites
+									img(src="assets/img/icon-heart-catalog.png", alt="Избранное")
+
+					.catalog-item-grid 
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._wrapper-icons
+								._corner.catalog-item__discount.-top-left SALE <br/> 20%
+								img(src="assets/img/icon-zoom.png", alt="Увеличение")._corner.-top-right
+								img(src="assets/img/icon-weight-gray.png", alt="Весы")._corner.-top-right-2
+								img(src="assets/img/icon-video.png", alt="Видео")._corner.-bottom-right
+								img(src="assets/img/icon-gift.png", alt="Подарок")._corner.-bottom-left
+
+						.description-grid 
+							._gallery 
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del> 	
+							
+							._sizes 
+								p._size 42 <small>(2)</small>
+								p._size 44 <small>(8)</small>
+								p._size 46 <small>(2)</small>
+								p._size 48 <small>(10)</small>
+							._buttons
+								button._button.-buy Купить
+								button._button.-favorites
+									img(src="assets/img/icon-heart-catalog.png", alt="Избранное")
+
+					.catalog-item-grid 
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._wrapper-icons
+								._corner.catalog-item__discount.-top-left SALE <br/> 20%
+								img(src="assets/img/icon-zoom.png", alt="Увеличение")._corner.-top-right
+								img(src="assets/img/icon-weight-gray.png", alt="Весы")._corner.-top-right-2
+								img(src="assets/img/icon-video.png", alt="Видео")._corner.-bottom-right
+								img(src="assets/img/icon-gift.png", alt="Подарок")._corner.-bottom-left
+
+						.description-grid 
+							._gallery 
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del> 	
+							
+							._sizes 
+								p._size 42 <small>(2)</small>
+								p._size 44 <small>(8)</small>
+								p._size 46 <small>(2)</small>
+								p._size 48 <small>(10)</small>
+							._buttons
+								button._button.-buy Купить
+								button._button.-favorites
+									img(src="assets/img/icon-heart-catalog.png", alt="Избранное")
+
+					.catalog-item-grid 
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._wrapper-icons
+								._corner.catalog-item__discount.-top-left SALE <br/> 20%
+								img(src="assets/img/icon-zoom.png", alt="Увеличение")._corner.-top-right
+								img(src="assets/img/icon-weight-gray.png", alt="Весы")._corner.-top-right-2
+								img(src="assets/img/icon-video.png", alt="Видео")._corner.-bottom-right
+								img(src="assets/img/icon-gift.png", alt="Подарок")._corner.-bottom-left
+
+						.description-grid 
+							._gallery 
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del> 	
+							
+							._sizes 
+								p._size 42 <small>(2)</small>
+								p._size 44 <small>(8)</small>
+								p._size 46 <small>(2)</small>
+								p._size 48 <small>(10)</small>
+							._buttons
+								button._button.-buy Купить
+								button._button.-favorites
+									img(src="assets/img/icon-heart-catalog.png", alt="Избранное")
+
+					.catalog-item-grid 
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._wrapper-icons
+								._corner.catalog-item__discount.catalog-item__discount--new.-top-left NEW
+								img(src="assets/img/icon-zoom.png", alt="Увеличение")._corner.-top-right
+								img(src="assets/img/icon-weight-gray.png", alt="Весы")._corner.-top-right-2
+								img(src="assets/img/icon-video.png", alt="Видео")._corner.-bottom-right
+								img(src="assets/img/icon-gift.png", alt="Подарок")._corner.-bottom-left
+
+						.description-grid 
+							._gallery 
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del> 	
+							
+							._sizes 
+								p._size 42 <small>(2)</small>
+								p._size 44 <small>(8)</small>
+								p._size 46 <small>(2)</small>
+								p._size 48 <small>(10)</small>
+							._buttons
+								button._button.-buy Купить
+								button._button.-favorites
+									img(src="assets/img/icon-heart-catalog.png", alt="Избранное")
+
+					.catalog-item-grid 
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._wrapper-icons
+								._corner.catalog-item__discount.-top-left SALE <br/> 20%
+								img(src="assets/img/icon-zoom.png", alt="Увеличение")._corner.-top-right
+								img(src="assets/img/icon-weight-gray.png", alt="Весы")._corner.-top-right-2
+								img(src="assets/img/icon-video.png", alt="Видео")._corner.-bottom-right
+								img(src="assets/img/icon-gift.png", alt="Подарок")._corner.-bottom-left
+
+						.description-grid 
+							._gallery 
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del> 	
+							
+							._sizes 
+								p._size 42 <small>(2)</small>
+								p._size 44 <small>(8)</small>
+								p._size 46 <small>(2)</small>
+								p._size 48 <small>(10)</small>
+							._buttons
+								button._button.-buy Купить
+								button._button.-favorites
+									img(src="assets/img/icon-heart-catalog.png", alt="Избранное")
+
+				.pagination 
+					button._button Показать ещё <img src="assets/img/icon-more.png" alt="Больше"/>
+					._bullets 
+						button._bullet.active 1
+						button._bullet 2
+						button._bullet 3
+						button._bullet 4
+						button._bullet 5
+						._bullet.-dots ...
+						button._bullet 12
+
+				.catalog-search
+					h3._title С этими товарами ищут
+					._row
+						a(href="#")._link костюм
+						a(href="#")._link блузка
+						a(href="#")._link брюки
+						a(href="#")._link куртка женская весна
+						a(href="#")._link пальто зимнее женское
+						a(href="#")._link пальто женское в клетку
+						a(href="#")._link пальто женское зимнее шерстяное
+						a(href="#")._link пальто женское зимнее 
+						a(href="#")._link пальто женское зимнее шерстяное
+						a(href="#")._link пальто женское 
+						a(href="#")._link пальто зимнее шерстяное
+
+				.catalog-viewed 
+					h3._title С этими товарами ищут
+					._row
+						.catalog-viewed-item
+							._wrapper-img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price.-discount 3 200 грн <del>3 700 грн </del>
+
+						.catalog-viewed-item
+							._wrapper-img
+								img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+							._header 
+								._column
+									._title Кашемировое пальто «Рэй» какао	
+									._price 3 200 грн
+
+		section.about 
+			h2._title Компания "Emass" — производитель стильной и качественной женской одежды
+			p._text Основным направлением нашей деятельности является производство и оптовая продажа верхней женской одежды. В первую очередь — это пальто, куртки, плащи, ветровки. <br/><br/>Мы реализуем крупным и мелким оптом верхнюю одежду во все регионы Украины и ближнего зарубежья, предоставляем эксклюзивные дистрибьюторские условия сотрудничества нашим постоянным клиентам. <br/><br/>Главная задача, которая стоит перед всем штатом, это высокое качество нашей продукции. Оригинальные модели с соблюдением всех тенденций современной моды, безупречная посадка, высокое качество используемых тканей и фурнитуры- это результат работы всего нашего коллектива, любящего свое дело. <br/><br/>Процесс производства каждой модели долгий и кропотливый. Прежде чем представить Вам новую модель, наши модельеры проделывают большую работу: детально изучают тенденции мира моды, учитывают потребительский спрос, актуальность тех или иных тканей и цветов. И только с учетом всех этих моментов создается эскиз новой оригинальной модели. Безупречная посадка наших моделей достигается благодаря отлаженной работы команды конструкторов. Ни одна единица не может быть запущена в производство без доведения ее до максимально идеальной посадки.
+			a(href="#")._more Читать далее  
+				img(src="assets/img/icon-dropdown.svg", alt="Смотреть больше")
+
+	include assets/includes/footer.pug
