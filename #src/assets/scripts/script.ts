@@ -139,6 +139,15 @@ const dropdown = () => {
 		isCanChoice: true,
 		isValueSet: true,
 	});
+
+	const reviewContainer = document.querySelectorAll('.review-dropdown') as NodeListOf<Element>;
+	const reviewDropdown = new Dropdown(reviewContainer, {
+		isHover: false,
+		isCloseAfterChoice: true,
+		isMultiopen: false,
+		isCanChoice: true,
+		isValueSet: true,
+	});
 };
 
 dropdown();

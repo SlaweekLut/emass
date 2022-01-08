@@ -122,6 +122,14 @@ var dropdown = function () {
         isCanChoice: true,
         isValueSet: true
     });
+    var reviewContainer = document.querySelectorAll('.review-dropdown');
+    var reviewDropdown = new Dropdown(reviewContainer, {
+        isHover: false,
+        isCloseAfterChoice: true,
+        isMultiopen: false,
+        isCanChoice: true,
+        isValueSet: true
+    });
 };
 dropdown();
 var choice = function () {
