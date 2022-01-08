@@ -1,0 +1,256 @@
+include assets/includes/head.pug
+body 
+
+	include assets/includes/header.pug
+	
+	main 
+		a.header-banner(href="#") 
+			img(src="assets/img/img-banner-top.png", alt="Баннер")
+
+		nav.line-nav
+			a(href="#")._item Каталог
+			a(href="#")._item Пальто
+			a(href="#")._item Кашемировые пальто
+			a(href="#")._item "Джуди" темно-бежевое
+
+		section.product 
+
+			._gallery 
+				img(src="assets/img/img-catalog-2.png", alt="Фото")
+				img(src="assets/img/img-catalog-2.png", alt="Фото")
+				img(src="assets/img/img-catalog-2.png", alt="Фото")
+				img(src="assets/img/img-catalog-2.png", alt="Фото")
+				img(src="assets/img/img-catalog-2.png", alt="Фото")
+				img(src="assets/img/img-catalog-2.png", alt="Фото")
+			
+			._description 
+				h2._title Пальто кашемировое "Джуди" темно-бежевое
+				._subtitle 
+					p._text.-subtitle Артикул: 216
+					p._text.-subtitle Просмотрели 1852
+				
+				p._price 2 320 грн <del>2 900 грн</del>
+
+				.size-product 
+					._item 
+						p._text.-size 42
+						button._button.-minus -
+						input(type="number", value='0')._input
+						button._button.-plus +
+						p._text.-info отправка сегодня <img src='assets/img/icon-info.png' alt='Доп. Информация'>
+						
+					._item 
+						p._text.-size 44
+						button._button.-minus -
+						input(type="number", value='0')._input
+						button._button.-plus +
+						p._text.-info отправка завтра <img src='assets/img/icon-info.png' alt='Доп. Информация'>
+
+					._item 
+						p._text.-size 46
+						button._button.-minus -
+						input(type="number", value='0')._input
+						button._button.-plus +
+						p._text.-info отправка сегодня <img src='assets/img/icon-info.png' alt='Доп. Информация'>
+
+					._item 
+						p._text.-size 48
+						button._button.-minus -
+						input(type="number", value='0')._input
+						button._button.-plus +
+						p._text.-info появится через 3 дня<img src='assets/img/icon-info.png' alt='Доп. Информация'>
+
+				._buttons 
+					button._button.-line <img src="assets/img/icon-line.png" alt="Размерная стека"/> Размерная сетка
+					button._button.-heart <img src="assets/img/icon-heart-catalog.png" alt="Нравится"/> 12
+					button._button <img src="assets/img/icon-weight.png" alt="Вес"/>
+				
+				.rate-size 
+					p._value <span>9.0</span> Отлично
+					p._text Ваш размер - <strong> 42 </strong> 
+
+				._tracks
+					label.track
+						input(type='checkbox')._input
+						span._box
+							img(src="assets/img/icon-check.svg", alt="Галка")
+						span._text следить за ценой <img src='assets/img/icon-info.png' alt='Доп. Информация'>
+
+					label.track
+						input(type='checkbox')._input
+						span._box
+							img(src="assets/img/icon-check.svg", alt="Галка")
+						span._text следить за товаром <img src='assets/img/icon-info.png' alt='Доп. Информация'>
+
+				a(href="#")._link.-buy Купить
+
+				p._text.-number +3 8 ( _ _ _ ) ___-__-__
+
+				a(href="#")._link.-click КУПИТЬ В 1 КЛИК
+
+				p._text.-other-color Другие цвета
+				._row-color 
+					img(src="assets/img/img-catalog-2.png", alt="Фото")
+					img(src="assets/img/img-catalog-2.png", alt="Фото")
+					img(src="assets/img/img-catalog-2.png", alt="Фото")
+
+				.accardion-product.js-accardion
+					._header.js-accardion-header Описание <img src='assets/img/icon-dropdown.svg' />
+					._list.js-accardion-list
+						p._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+			
+				.accardion-product.js-accardion
+					._header.js-accardion-header Основные харакетистики <img src='assets/img/icon-dropdown.svg' />
+					._list.js-accardion-list
+						p._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+			
+				.accardion-product.js-accardion
+					._header.js-accardion-header Замеры <img src='assets/img/icon-dropdown.svg' />
+					._list.js-accardion-list
+						p._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+			
+				.accardion-product.js-accardion
+					._header.js-accardion-header Уход <img src='assets/img/icon-dropdown.svg' />
+					._list.js-accardion-list
+						p._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+			
+				.accardion-product.js-accardion
+					._header.js-accardion-header Доставка и оплата <img src='assets/img/icon-dropdown.svg' />
+					._list.js-accardion-list
+						p._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+
+				._socials 
+					a(href="#")._social 
+						img(src="assets/img/icon-facebook-product.svg", alt="Facebook")
+					a(href="#")._social 
+						img(src="assets/img/icon-google.svg", alt="google")
+					a(href="#")._social 
+						img(src="assets/img/icon-instagram-product.svg", alt="Instagram")
+					a(href="#")._social 
+						img(src="assets/img/icon-pinterest.svg", alt="pinterest")
+					a(href="#")._social 
+						img(src="assets/img/icon-whatsapp.svg", alt="whatsapp")
+	
+		section.product-review 
+			._header 
+				button._button.active <img src='assets/img/icon-review.svg' /> Отзывы
+				button._button <img src='assets/img/icon-question.svg' /> Вопросы
+			
+			._rate 
+				.star-rate 
+					._row 
+						._star
+						._star
+						._star
+						._star
+						._star
+					p._text Общий рейтинг основан на 2 отзывах
+
+				.size-rate 
+					._line
+					._row
+						p._text Маломерит
+						p._text Полноразмерный
+						p._text Большемерит
+						
+			form.review-form(action="")
+				h3._title Мы ждем Ваш отзыв!
+				.star-rate 
+					._row 
+						._star
+						._star
+						._star
+						._star
+						._star
+
+				textarea(required)._textarea
+
+				.review-dropdown.js-dropdown 
+					._header.js-dropdown-header
+						._value.js-dropdown-value Полноразмерный
+						img(src="assets/img/icon-dropdown.svg", alt="Выпадающий список")
+
+					._list.js-dropdown-list 
+						button(type='button')._button Большемерит
+						button(type='button')._button Полноразмерный
+						button(type='button')._button Маломерит
+
+				input(type="text", placeholder='Ваше Имя' required)._input.-name
+				input(type="text", placeholder='Ваше E-mail' required)._input.-mail
+				button._button Отправить
+
+		section.product-review-done 
+			._item
+				p._author Татьяна
+				.star-rate 
+					._row 
+						._star
+						._star
+						._star
+						._star
+						._star
+				p._text Именно, то что искала. Ткань приятная, цвет потрясающий и соответствует фото. Спасибо, получила на следующий день после заказа. 
+				._row 
+					p._text.-footer 29.01.2019
+					button._text.-footer Ответить
+
+		section.catalog-search.-product
+			h3._title С этими товарами ищут
+			._row
+				a(href="#")._link костюм
+				a(href="#")._link блузка
+				a(href="#")._link брюки
+				a(href="#")._link куртка женская весна
+				a(href="#")._link пальто зимнее женское
+				a(href="#")._link пальто женское в клетку
+				a(href="#")._link пальто женское зимнее шерстяное
+				a(href="#")._link пальто женское зимнее 
+				a(href="#")._link пальто женское зимнее шерстяное
+				a(href="#")._link пальто женское 
+				a(href="#")._link пальто зимнее шерстяное
+
+		section.catalog-viewed.-product
+			h3._title Просмотренные
+			._row
+				.catalog-viewed-item
+					._wrapper-img
+						img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+					._header 
+						._column
+							._title Кашемировое пальто «Рэй» какао	
+							._price.-discount 3 200 грн <del>3 700 грн </del>
+
+				.catalog-viewed-item
+					._wrapper-img
+						img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+					._header 
+						._column
+							._title Кашемировое пальто «Рэй» какао	
+							._price 3 200 грн
+
+		section.catalog-viewed.-product
+				h3._title Похожие
+				._row
+					.catalog-viewed-item
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+						._header 
+							._column
+								._title Кашемировое пальто «Рэй» какао	
+								._price.-discount 3 200 грн <del>3 700 грн </del>
+
+					.catalog-viewed-item
+						._wrapper-img
+							img(src="assets/img/img-catalog-2.png", alt="Пальто")._img
+						._header 
+							._column
+								._title Кашемировое пальто «Рэй» какао	
+								._price 3 200 грн
+
+		section.about 
+			h2._title Компания "Emass" — производитель стильной и качественной женской одежды
+			p._text Основным направлением нашей деятельности является производство и оптовая продажа верхней женской одежды. В первую очередь — это пальто, куртки, плащи, ветровки. <br/><br/>Мы реализуем крупным и мелким оптом верхнюю одежду во все регионы Украины и ближнего зарубежья, предоставляем эксклюзивные дистрибьюторские условия сотрудничества нашим постоянным клиентам. <br/><br/>Главная задача, которая стоит перед всем штатом, это высокое качество нашей продукции. Оригинальные модели с соблюдением всех тенденций современной моды, безупречная посадка, высокое качество используемых тканей и фурнитуры- это результат работы всего нашего коллектива, любящего свое дело. <br/><br/>Процесс производства каждой модели долгий и кропотливый. Прежде чем представить Вам новую модель, наши модельеры проделывают большую работу: детально изучают тенденции мира моды, учитывают потребительский спрос, актуальность тех или иных тканей и цветов. И только с учетом всех этих моментов создается эскиз новой оригинальной модели. Безупречная посадка наших моделей достигается благодаря отлаженной работы команды конструкторов. Ни одна единица не может быть запущена в производство без доведения ее до максимально идеальной посадки.
+			a(href="#")._more Читать далее  
+				img(src="assets/img/icon-dropdown.svg", alt="Смотреть больше")
+
+	include assets/includes/footer.pug
