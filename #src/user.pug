@@ -1,0 +1,84 @@
+include assets/includes/head.pug
+body 
+
+	include assets/includes/header.pug
+	
+	main 
+
+		a.header-banner(href="#") 
+			img(src="assets/img/img-banner-top.png", alt="Баннер")
+		
+		article.user
+			aside.user-aside
+				._account 
+					._avatar
+						img(src="assets/img/icon-user-2.png", alt="автарка")
+					p._text.-name Наталья Иванова
+					p._text.-position розничный покупатель
+				button._button.active Личные данные 
+				button._button Мои скидки 
+				button._button Баланс счета 
+				button._button Профили заказов 
+				button._button История заказов 
+				button._button Обмен и возврат
+				button._button Избранное <span>11</span>
+				button._button Сравнение <span>9</span>
+				button._button Слежу за ценой <span>3</span>
+				button._button Слежу за товаром <span>3</span>
+				button._button Просмотренные товары
+				button._button Рассылка событий
+				button._button Подарочные сертификаты
+				button._button Партнерская система
+				button._button API выгрузка
+				button._button Выход
+
+			section.user-content 
+				._themes 
+					button._theme-button 
+						img(src="assets/img/icon-light-theme.png", alt="Светлая тема")
+					button._theme-button
+						img(src="assets/img/icon-dark-theme.png", alt="Темная тема")
+
+				form(action="" method="GET")._form
+					h3._title.-first Контактные данные
+					h3._title.-second Службы доставки
+					aside._aside 
+						._avatar
+							img(src="assets/img/icon-user-2.png", alt="автарка")
+						button._avatar-load(type='button') загрузить фото
+					section._section.-first
+						fieldset._fieldset 
+							legend._legend Имя
+							input(type="text")._input
+						fieldset._fieldset 
+							legend._legend Отчество
+							input(type="text")._input
+						fieldset._fieldset 
+							legend._legend Фамилия
+							input(type="text")._input
+						fieldset._fieldset 
+							legend._legend Телефон
+							input(type="phone")._input
+						fieldset._fieldset 
+							legend._legend E-mail
+							input(type="email")._input
+						fieldset._fieldset 
+							legend._legend Пароль
+							input(type="password")._input
+						fieldset._fieldset 
+							legend._legend Сменить пароль
+							input(type="password")._input
+					section._section.-second
+						fieldset._fieldset 
+							legend._legend Новая почта
+							input(type="text")._input
+						fieldset._fieldset 
+							legend._legend Укр почта
+							input(type="text")._input
+						fieldset._fieldset 
+							legend._legend Justin
+							input(type="text")._input
+					._buttons
+						button._button Сохранить
+						button._button.-light Отменить
+	include assets/includes/footer.pug

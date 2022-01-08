@@ -1723,3 +1723,201 @@ body
 
 		.catalog-item-grid__wrapper-img
 			z-index: 5
+
+/** User **/
+
+.user
+	display: grid
+	grid-template-columns: 360px 1fr
+	margin: 50px 0
+
+.user-aside
+	display: flex
+	flex-direction: column
+	border-right: 1px solid $Color-Light-Gray
+	&__account
+		display: grid
+		grid-template-columns: 75px 1fr
+		grid-template-areas: 'avatar name' 'avatar position'
+		gap: 0 10px
+		padding: 20px 30px 20px 70px
+
+	&__avatar
+		grid-area: avatar
+		width: 70px
+		height: 70px
+		background-color: $Color-Light-Gray
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		box-shadow: 0px 0px 0px 3px $Color-White, 0 0 0 5px $Color-Light-Gray
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+
+	&__text
+		font-family: 'Open Sans'
+		&--name
+			grid-area: name
+			font-size: 16px
+			display: flex
+			align-items: flex-end
+		&--position
+			grid-area: position
+			font-size: 14px
+			color: $Color-Gray
+
+	&__button
+		font-family: 'Open Sans'
+		font-weight: 300
+		font-size: 14px
+		height: 50px
+		border: 0
+		border-top: 1px solid $Color-Light-Gray
+		background-color: transparent
+		display: flex
+		align-items: center
+		padding-left: 70px
+		&:hover, &.active
+			background-color: $Color-Light-Gray
+			font-weight: 600
+
+		span
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-left: 10px
+			width: 20px
+			height: 20px
+			background-color: $Color-Pink
+			border-radius: 50%
+			font-size: 11px
+			font-weight: 600
+			color: $Color-White
+
+.user-content
+	position: relative
+	margin-left: 50px
+
+	&__avatar
+		width: 70px
+		height: 70px
+		background-color: $Color-Light-Gray
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		box-shadow: 0px 0px 0px 3px $Color-White, 0 0 0 5px $Color-Light-Gray
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+
+	&__avatar-load
+		font-family: 'Open Sans'
+		font-weight: 300
+		color: #99a2e8
+		border: 0
+		outline: none
+		background-color: transparent
+
+	&__title
+		text-align: center
+		font-size: 21px
+		font-weight: 300
+		font-family: 'Open Sans'
+		margin: 0 0 50px
+		&--first
+			grid-area: title1
+		&--second
+			margin-top: 50px
+			grid-area: title2
+
+	&__themes
+		position: absolute
+		right: 5%
+		top: 0
+
+	&__theme-button
+		border: 0
+		outline: none
+		background-color: transparent
+		margin-left: 20px
+		width: 32px
+		height: 32px
+
+	&__form
+		max-width: 1200px
+		width: 100%
+		display: grid
+		grid-template-columns: 100px 1fr
+		gap: 0 100px
+		grid-template-areas: "title1 title1" "aside contacts" "title2 title2" "x delivery" "x buttons"
+
+	&__aside
+		display: flex
+		align-items: center
+		flex-direction: column
+		gap: 10px
+		grid-area: aside
+
+	&__section
+		display: flex
+		flex-direction: column
+		gap: 40px
+		&--first
+			grid-area: contacts
+		&--second
+			grid-area: delivery
+
+	&__fieldset
+		outline: none
+		border: 0
+
+	&__legend
+		font-family: 'Open Sans'
+		font-size: 12px
+		font-weight: 300
+		color: $Color-Gray
+
+	&__input
+		font-family: 'Open Sans'
+		font-size: 19px
+		font-weight: 300
+		padding-left: 10px
+		border: 0
+		outline: none
+		height: 40px
+		border-bottom: 1px solid $Color-Light-Gray
+		width: 500px
+
+	&__buttons
+		grid-area: buttons
+		margin-top: 70px
+		max-width: 460px
+		width: 100%
+		display: flex
+		justify-content: space-between
+
+	&__button
+		height: 40px
+		width: 150px
+		display: flex
+		align-items: center
+		justify-content: center
+		border: 1px solid $Color-Black
+		font-family: 'Open Sans'
+		font-size: 18px
+		background-color: $Color-Black
+		color: $Color-White
+		&:hover
+			background-color: transparent
+			color: $Color-Black
+		&--light
+			background-color: transparent
+			color: $Color-Black
+			&:hover
+				background-color: $Color-Black
+				color: $Color-White

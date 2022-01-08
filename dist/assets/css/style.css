@@ -2568,6 +2568,306 @@ body {
   z-index: 5;
 }
 
+/** User **/
+
+.user {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  margin: 50px 0;
+}
+
+.user-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-right: 1px solid #e6e6e6;
+}
+
+.user-aside__account {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  grid-template-areas: "avatar name" "avatar position";
+  gap: 0 10px;
+  padding: 20px 30px 20px 70px;
+}
+
+.user-aside__avatar {
+  grid-area: avatar;
+  width: 70px;
+  height: 70px;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 3px #FFFFFF, 0 0 0 5px #e6e6e6;
+  box-shadow: 0px 0px 0px 3px #FFFFFF, 0 0 0 5px #e6e6e6;
+  overflow: hidden;
+}
+
+.user-aside__avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-aside__text {
+  font-family: "Open Sans";
+}
+
+.user-aside__text--name {
+  grid-area: name;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.user-aside__text--position {
+  grid-area: position;
+  font-size: 14px;
+  color: #999999;
+}
+
+.user-aside__button {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  height: 50px;
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 70px;
+}
+
+.user-aside__button:hover,
+.user-aside__button.active {
+  background-color: #e6e6e6;
+  font-weight: 600;
+}
+
+.user-aside__button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #cc9999;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.user-content {
+  position: relative;
+  margin-left: 50px;
+}
+
+.user-content__avatar {
+  width: 70px;
+  height: 70px;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 3px #FFFFFF, 0 0 0 5px #e6e6e6;
+  box-shadow: 0px 0px 0px 3px #FFFFFF, 0 0 0 5px #e6e6e6;
+  overflow: hidden;
+}
+
+.user-content__avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-content__avatar-load {
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #99a2e8;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+.user-content__title {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  margin: 0 0 50px;
+}
+
+.user-content__title--first {
+  grid-area: title1;
+}
+
+.user-content__title--second {
+  margin-top: 50px;
+  grid-area: title2;
+}
+
+.user-content__themes {
+  position: absolute;
+  right: 5%;
+  top: 0;
+}
+
+.user-content__theme-button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  margin-left: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+.user-content__form {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0 100px;
+  grid-template-areas: "title1 title1" "aside contacts" "title2 title2" "x delivery" "x buttons";
+}
+
+.user-content__aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+  grid-area: aside;
+}
+
+.user-content__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.user-content__section--first {
+  grid-area: contacts;
+}
+
+.user-content__section--second {
+  grid-area: delivery;
+}
+
+.user-content__fieldset {
+  outline: none;
+  border: 0;
+}
+
+.user-content__legend {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 300;
+  color: #999999;
+}
+
+.user-content__input {
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 300;
+  padding-left: 10px;
+  border: 0;
+  outline: none;
+  height: 40px;
+  border-bottom: 1px solid #e6e6e6;
+  width: 500px;
+}
+
+.user-content__buttons {
+  grid-area: buttons;
+  margin-top: 70px;
+  max-width: 460px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.user-content__button {
+  height: 40px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #000000;
+  font-family: "Open Sans";
+  font-size: 18px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.user-content__button:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+.user-content__button--light {
+  background-color: transparent;
+  color: #000000;
+}
+
+.user-content__button--light:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
 @media screen and (min-width: 320px) {
   .collection-one-sldie__link {
     font-size: calc(14px + 18 * ((100vw - 320px) / 1600));
