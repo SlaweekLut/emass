@@ -141,6 +141,16 @@ input::-webkit-inner-spin-button {
   display: block;
 }
 
+.header__left-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .nav {
   margin-left: auto;
   display: -webkit-box;

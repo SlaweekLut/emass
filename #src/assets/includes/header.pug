@@ -28,8 +28,17 @@ button.black#CloseCatalog
 
 header.header
 	.container
-		a._logo(href="#" tabindex='-1') 
-			img(src="assets/img/logo.png", alt="Логотип")
+		.header__left-part 
+			a._logo(href="#" tabindex='-1') 
+				img(src="assets/img/logo.png", alt="Логотип")
+			.number.js-dropdown
+				p._header.js-dropdown-header(tabindex='0')
+					span._value.js-dropdown-value +38 (050) 770-00-21 
+					img(src="assets/img/icon-dropdown.svg", alt="Выпадающий список")
+				._list.js-dropdown-list(tabindex='-1')
+					p._number +38 (050) 770-00-21 
+					p._number +38 (050) 770-00-21 
+
 		nav.nav 
 			button._item(href="#")#OpenCatalog Каталог
 			a._item(href="#") Помощь
@@ -75,10 +84,4 @@ header.header
 				._list.js-dropdown-list(tabindex='-1')
 					button._button Рус
 					button._button Укр
-			.number.js-dropdown
-				p._header.js-dropdown-header(tabindex='0')
-					span._value.js-dropdown-value +38 (050) 770-00-21 
-					img(src="assets/img/icon-dropdown.svg", alt="Выпадающий список")
-				._list.js-dropdown-list(tabindex='-1')
-					p._number +38 (050) 770-00-21 
-					p._number +38 (050) 770-00-21 
+			
